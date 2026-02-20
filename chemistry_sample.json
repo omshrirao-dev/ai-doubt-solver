@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "20 mL of 2 M NaOH solution is added to 400 mL of 0.5 M NaOH solution. Find the final concentration (\u00d710^-2 M).",
+        "options": {
+            "A": "55",
+            "B": "57",
+            "C": "60",
+            "D": "50"
+        },
+        "correct_answer": "B",
+        "solution": "Use M_f = (M1V1 + M2V2)/(V1+V2). (2\u00d720 + 0.5\u00d7400)/420 = 0.571 M = 57\u00d710^-2 M.",
+        "difficulty": "medium",
+        "concept_tags": "Molarity, Solution mixing"
+    },
+    {
+        "id": 2,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "A hydrocarbon (X) has molar mass 80 g/mol and 90% carbon. Find degree of unsaturation.",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+        },
+        "correct_answer": "C",
+        "solution": "Empirical formula C3H4. Molecular formula C6H8. Degree of unsaturation = (2\u00d76+2-8)/2 = 3.",
+        "difficulty": "medium",
+        "concept_tags": "Empirical formula, Unsaturation"
+    },
+    {
+        "id": 3,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "A compound contains 54.2% C, 9.2% H and 36.6% O. Molar mass is 132 g/mol. Find molecular formula.",
+        "options": {
+            "A": "C4H8O3",
+            "B": "C6H12O6",
+            "C": "C4H8O2",
+            "D": "C6H12O3"
+        },
+        "correct_answer": "D",
+        "solution": "Empirical formula C2H4O. Molecular mass/EF mass = 132/44 = 3. Molecular formula = C6H12O3.",
+        "difficulty": "medium",
+        "concept_tags": "Empirical formula, Molecular formula"
+    },
+    {
+        "id": 4,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "2.8\u00d710^-3 mol CO2 is left after removing 10^21 molecules from sample. Find initial mass.",
+        "options": {
+            "A": "98.3 mg",
+            "B": "48.2 mg",
+            "C": "196.2 mg",
+            "D": "150.4 mg"
+        },
+        "correct_answer": "C",
+        "solution": "Removed moles = 10^21/6.02\u00d710^23 = 1.66\u00d710^-3 mol. Total initial = (2.8+1.66)\u00d710^-3 = 4.46\u00d710^-3 mol. Mass = 4.46\u00d710^-3\u00d744 = 196.24 mg.",
+        "difficulty": "hard",
+        "concept_tags": "Avogadro number, Mole concept"
+    },
+    {
+        "id": 5,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "0.01 mol organic compound with 10% H produces 0.9 g H2O on combustion. Find molar mass.",
+        "options": {
+            "A": "50",
+            "B": "80",
+            "C": "100",
+            "D": "120"
+        },
+        "correct_answer": "C",
+        "solution": "0.9 g H2O = 0.05 mol. H moles = 0.1 mol. 0.01 mol compound has 0.1 g H. Therefore molar mass = 100 g/mol.",
+        "difficulty": "hard",
+        "concept_tags": "Combustion analysis"
+    },
+    {
+        "id": 6,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "81 g Al reacts with 128 g O2. Find mass of Al2O3 formed.",
+        "options": {
+            "A": "102 g",
+            "B": "153 g",
+            "C": "204 g",
+            "D": "81 g"
+        },
+        "correct_answer": "B",
+        "solution": "4Al + 3O2 \u2192 2Al2O3. Al limiting. 3 mol Al gives 1.5 mol Al2O3. Mass = 1.5\u00d7102 = 153 g.",
+        "difficulty": "medium",
+        "concept_tags": "Stoichiometry, Limiting reagent"
+    },
+    {
+        "id": 7,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "X g benzoic acid reacts with NaHCO3 to give 11.2 L CO2 at STP. Find X.",
+        "options": {
+            "A": "61 g",
+            "B": "122 g",
+            "C": "30.5 g",
+            "D": "44 g"
+        },
+        "correct_answer": "A",
+        "solution": "11.2 L = 0.5 mol CO2. 1 mol acid gives 1 mol CO2. Required acid = 0.5 mol \u00d7122 = 61 g.",
+        "difficulty": "medium",
+        "concept_tags": "Gas volume, Mole concept"
+    },
+    {
+        "id": 8,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "Density of 3M NaCl solution is 1.25 g/mL. Find molality.",
+        "options": {
+            "A": "1.79 m",
+            "B": "2.79 m",
+            "C": "3 m",
+            "D": "1.5 m"
+        },
+        "correct_answer": "B",
+        "solution": "Molality = (M\u00d71000)/(1000d - M\u00d7Mw). = (3\u00d71000)/(1250 - 175.5) = 2.79 m.",
+        "difficulty": "hard",
+        "concept_tags": "Molality, Density relation"
+    },
+    {
+        "id": 9,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "Molarity of 70% (w/w) acid (M=70 g/mol, density=1.25 g/mL).",
+        "options": {
+            "A": "10.5",
+            "B": "12.5",
+            "C": "7",
+            "D": "14"
+        },
+        "correct_answer": "B",
+        "solution": "70 g in 100 g solution. Volume = 100/1.25 = 80 mL. M = (70/70)/(0.08) = 12.5 M.",
+        "difficulty": "medium",
+        "concept_tags": "Molarity, Density"
+    },
+    {
+        "id": 10,
+        "exam": "JEE Main",
+        "subject": "Chemistry",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "year": 2025,
+        "question": "75% by mass HNO3 solution. Volume containing 30 g HNO3 (density=1.25 g/mL).",
+        "options": {
+            "A": "40 mL",
+            "B": "32 mL",
+            "C": "45 mL",
+            "D": "55 mL"
+        },
+        "correct_answer": "B",
+        "solution": "75 g HNO3 in 100 g solution. For 30 g: solution mass = (100/75)\u00d730 = 40 g. Volume = 40/1.25 = 32 mL.",
+        "difficulty": "medium",
+        "concept_tags": "Mass percent, Density"
+    }
+]
