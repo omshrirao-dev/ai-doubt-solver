@@ -1,2 +1,5 @@
 streamlit
 sentence-transformers
+easyocr
+Pillow
+torch
