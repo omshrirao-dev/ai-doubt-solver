@@ -10,74 +10,32 @@ import numpy as np
 # ======================
 st.markdown("""
 <style>
-
-/* Background gradient */
-.stApp {
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-}
-
-/* Glass container */
-.block-container {
-    background: rgba(255,255,255,0.08);
-    padding: 2rem;
-    border-radius: 18px;
-    backdrop-filter: blur(14px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* Input styling */
-.stTextInput > div > div > input {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-    border-radius: 10px;
-}
-
-/* File uploader */
-.stFileUploader {
-    background: rgba(255,255,255,0.08);
-    padding: 10px;
-    border-radius: 12px;
-}
-
-/* Headers */
-h1, h2, h3 {
-    color: #e0f2fe;
-}
-
-/* Answer box */
-.stSuccess {
-    border-radius: 12px;
-}
-
-/* Solution box */
-.stInfo {
-    border-radius: 12px;
-}
-
+.stApp {background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white;}
+.block-container {background: rgba(255,255,255,0.08); padding: 2rem; border-radius: 18px; backdrop-filter: blur(14px); box-shadow: 0 10px 30px rgba(0,0,0,0.3);}
+h1, h2, h3 {color: #e0f2fe;}
 </style>
 """, unsafe_allow_html=True)
 
 # ======================
-# 📂 LOAD DATA
+# LOAD DATA
 # ======================
 with open("chemistry_sample.json", "r") as f:
     dataset = json.load(f)
 
 # ======================
-# 🤖 LOAD MODELS
+# LOAD MODELS
 # ======================
 model = SentenceTransformer('all-MiniLM-L6-v2')
 reader = easyocr.Reader(['en'], gpu=False)
 
 # ======================
-# 🔍 CREATE EMBEDDINGS
+# EMBEDDINGS
 # ======================
 questions = [item["question"] for item in dataset]
 question_embeddings = model.encode(questions, convert_to_tensor=True)
 
 # ======================
-# 🔎 SEMANTIC SOLVER
+# SEMANTIC SOLVER
 # ======================
 def semantic_solver(user_question, top_k=3):
     query_embedding = model.encode(user_question, convert_to_tensor=True)
@@ -86,94 +44,74 @@ def semantic_solver(user_question, top_k=3):
     return [dataset[int(idx)] for idx in top_results]
 
 # ======================
-# 📝 FORMAT SOLUTION
+# SOLUTION FORMATTER
 # ======================
-def format_solution(solution_text):
-    steps = solution_text.replace("\n", ".").split(".")
-    return [s.strip() for s in steps if len(s.strip()) > 5]
+def format_solution(text):
+    if not text:
+        return ["Solution not available"]
+    parts = text.replace("\n","\n\n")
+    return parts
 
 # ======================
-# 🚀 HERO SECTION
+# DISPLAY QUESTION
+# ======================
+def display_question_block(r, index):
+
+    st.subheader(f"Similar Question {index+1}")
+
+    # Question
+    st.write("### Question")
+    st.write(r["question"])
+
+    # Options (only if exist)
+    if any(r["options"].values()):
+        st.write("### Options")
+        for key,val in r["options"].items():
+            if val.strip():
+                st.write(f"{key}) {val}")
+
+    # Answer
+    st.success(f"Correct Answer: {r['correct_answer']}")
+
+    # Solution
+    st.write("### Detailed Solution")
+    st.write(format_solution(r["solution"]))
+
+    st.markdown("---")
+
+# ======================
+# HERO
 # ======================
 st.markdown("""
-<h1 style='text-align:center; font-size:48px;'>🚀 AI Doubt Solver</h1>
-<p style='text-align:center; font-size:18px; color:#cbd5f5;'>
-Instant doubt solving + AI practice generator for students
-</p>
+<h1 style='text-align:center;'>🚀 AI Doubt Solver</h1>
+<p style='text-align:center;'>Instant doubt solving + AI practice generator</p>
 """, unsafe_allow_html=True)
 
 # ======================
-# ✍️ TEXT DOUBT
+# TEXT INPUT
 # ======================
-st.subheader("✍️ Type your doubt")
-
 user_input = st.text_input("Ask your doubt")
 
 if user_input:
     results = semantic_solver(user_input)
-
-    for i, r in enumerate(results):
-        st.subheader(f"Similar Question {i+1}")
-
-        # Question
-        st.write("### Question")
-        st.write(r["question"])
-
-        # Options
-        st.write("### Options")
-        st.write(f"A) {r['options']['A']}")
-        st.write(f"B) {r['options']['B']}")
-        st.write(f"C) {r['options']['C']}")
-        st.write(f"D) {r['options']['D']}")
-
-        # Answer
-        st.success(f"Correct Answer: {r['correct_answer']}")
-
-        # Solution
-        steps = format_solution(r["solution"])
-        st.write("### Stepwise Solution")
-        for j, s in enumerate(steps):
-            st.write(f"{j+1}. {s}")
+    for i,r in enumerate(results):
+        display_question_block(r,i)
 
 # ======================
-# 📸 IMAGE DOUBT
+# IMAGE INPUT
 # ======================
-st.subheader("📸 Upload question image")
-
-uploaded_file = st.file_uploader("Upload image", type=["png","jpg","jpeg"])
+uploaded_file = st.file_uploader("Upload question image", type=["png","jpg","jpeg"])
 
 if uploaded_file:
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded image")
+    st.image(image)
 
     img_array = np.array(image)
-    ocr_result = reader.readtext(img_array, detail=0)
-    extracted_text = " ".join(ocr_result)
+    text = " ".join(reader.readtext(img_array, detail=0))
 
-    st.subheader("Extracted text")
-    st.info(extracted_text)
+    st.write("### Extracted text")
+    st.info(text)
 
-    results = semantic_solver(extracted_text)
-
-    for i, r in enumerate(results):
-        st.subheader(f"Similar Question {i+1}")
-
-        # Question
-        st.write("### Question")
-        st.write(r["question"])
-
-        # Options
-        st.write("### Options")
-        st.write(f"A) {r['options']['A']}")
-        st.write(f"B) {r['options']['B']}")
-        st.write(f"C) {r['options']['C']}")
-        st.write(f"D) {r['options']['D']}")
-
-        # Answer
-        st.success(f"Correct Answer: {r['correct_answer']}")
-
-        # Solution
-        steps = format_solution(r["solution"])
-        st.write("### Stepwise Solution")
-        for j, s in enumerate(steps):
-            st.write(f"{j+1}. {s}")
+    results = semantic_solver(text)
+    for i,r in enumerate(results):
+        display_question_block(r,i)
