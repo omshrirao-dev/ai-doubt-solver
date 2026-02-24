@@ -9,6 +9,70 @@ from sentence_transformers import SentenceTransformer, util
 st.set_page_config(layout="wide")
 
 # ======================
+# 🎨 THEME SYSTEM
+# ======================
+themes = [
+"linear-gradient(-45deg,#0f172a,#1e1b4b,#312e81,#0f766e)",
+"linear-gradient(-45deg,#020617,#6d28d9,#ec4899,#0ea5e9)",
+"linear-gradient(-45deg,#022c22,#0f766e,#06b6d4,#1e3a8a)",
+"linear-gradient(-45deg,#0f172a,#1e40af,#7c3aed,#0ea5e9)",
+"linear-gradient(-45deg,#022c22,#065f46,#1e293b,#0f172a)"
+]
+
+if "theme_index" not in st.session_state:
+    st.session_state.theme_index = 0
+
+def next_theme():
+    st.session_state.theme_index = (st.session_state.theme_index + 1) % len(themes)
+
+bg = themes[st.session_state.theme_index]
+
+st.markdown(f"""
+<style>
+.stApp {{
+    background: {bg};
+    background-size:400% 400%;
+    animation: gradientBG 15s ease infinite;
+}}
+
+@keyframes gradientBG{{
+0%{{background-position:0% 50%;}}
+50%{{background-position:100% 50%;}}
+100%{{background-position:0% 50%;}}
+}}
+
+.login-box {{
+    background: rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:16px;
+    backdrop-filter: blur(12px);
+    width:400px;
+    margin:auto;
+    margin-top:120px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}}
+
+.title{{
+    text-align:center;
+    font-size:42px;
+    font-weight:800;
+    margin-top:80px;
+}}
+
+.card {{
+    background: rgba(255,255,255,0.07);
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:20px;
+    backdrop-filter: blur(12px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}}
+
+</style>
+""", unsafe_allow_html=True)
+
+# ======================
 # LOAD USERS
 # ======================
 with open("users.json") as f:
@@ -25,7 +89,7 @@ if "username" not in st.session_state:
 
 
 # ======================
-# LOGIN FUNCTION
+# LOGIN
 # ======================
 def login(username, password):
     for u in users:
@@ -49,28 +113,6 @@ def logout():
 # ======================
 if not st.session_state.logged_in:
 
-    st.markdown("""
-    <style>
-    .login-box {
-        background: rgba(255,255,255,0.08);
-        padding:40px;
-        border-radius:16px;
-        backdrop-filter: blur(12px);
-        width:400px;
-        margin:auto;
-        margin-top:120px;
-        text-align:center;
-        box-shadow:0 10px 30px rgba(0,0,0,0.4);
-    }
-    .title{
-        text-align:center;
-        font-size:42px;
-        font-weight:800;
-        margin-top:80px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
     st.markdown("<div class='title'>🚀 AI Doubt Solver</div>", unsafe_allow_html=True)
     st.markdown("<div class='login-box'>", unsafe_allow_html=True)
 
@@ -90,13 +132,16 @@ if not st.session_state.logged_in:
 # ======================
 else:
 
-    # TOP BAR
-    col1, col2 = st.columns([8,2])
+    # HEADER
+    col1, col2, col3 = st.columns([7,1,2])
 
     with col1:
         st.title(f"Welcome {st.session_state.username}")
 
     with col2:
+        st.button("🎨", on_click=next_theme)
+
+    with col3:
         st.button("Logout", on_click=logout)
 
     # ======================
@@ -132,10 +177,9 @@ else:
     # ======================
     def show(r, i=None):
 
-        st.markdown("---")
-        st.subheader("Exact Match" if i is None else f"Similar Question {i+1}")
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
 
-        st.write("### Question")
+        st.subheader("Exact Match" if i is None else f"Similar Question {i+1}")
         st.write(r.get("question", ""))
 
         options = r.get("options", {})
@@ -148,6 +192,8 @@ else:
         if r.get("solution"):
             for line in r["solution"].split("\n"):
                 st.write(line)
+
+        st.markdown("</div>", unsafe_allow_html=True)
 
     # ======================
     # INPUTS
