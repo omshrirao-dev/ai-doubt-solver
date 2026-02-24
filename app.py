@@ -114,10 +114,22 @@ if user_input:
 
     for i, r in enumerate(results):
         st.subheader(f"Similar Question {i+1}")
+
+        # Question
+        st.write("### Question")
         st.write(r["question"])
 
-        st.success(f"Answer: {r['correct_answer']}")
+        # Options
+        st.write("### Options")
+        st.write(f"A) {r['options']['A']}")
+        st.write(f"B) {r['options']['B']}")
+        st.write(f"C) {r['options']['C']}")
+        st.write(f"D) {r['options']['D']}")
 
+        # Answer
+        st.success(f"Correct Answer: {r['correct_answer']}")
+
+        # Solution
         steps = format_solution(r["solution"])
         st.write("### Stepwise Solution")
         for j, s in enumerate(steps):
@@ -145,10 +157,22 @@ if uploaded_file:
 
     for i, r in enumerate(results):
         st.subheader(f"Similar Question {i+1}")
+
+        # Question
+        st.write("### Question")
         st.write(r["question"])
 
-        st.success(f"Answer: {r['correct_answer']}")
+        # Options
+        st.write("### Options")
+        st.write(f"A) {r['options']['A']}")
+        st.write(f"B) {r['options']['B']}")
+        st.write(f"C) {r['options']['C']}")
+        st.write(f"D) {r['options']['D']}")
 
+        # Answer
+        st.success(f"Correct Answer: {r['correct_answer']}")
+
+        # Solution
         steps = format_solution(r["solution"])
         st.write("### Stepwise Solution")
         for j, s in enumerate(steps):
