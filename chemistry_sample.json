@@ -278,5 +278,109 @@
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"0.5",
 "solution":"Molality = moles/kg solvent = 2/4 = 0.5 m"
+},
+{
+"id":36,
+"type":"Numerical",
+"question":"On complete combustion 1.0 g of an organic compound (X) gave 1.46 g of CO2 and 0.567 g of H2O. The empirical formula mass of compound (X) is ______ g.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"58",
+"solution":"Mass of carbon from CO2 = 1.46 × 12/44\nMass of hydrogen from H2O = 0.567 × 2/18\nMass of oxygen = 1 − (C+H)\nConvert to mole ratio\nGet empirical formula\nCalculate empirical mass",
+"solution_image":"q36_solution.png"
+},
+{
+"id":37,
+"type":"Numerical",
+"question":"Determine molecular formula of compound having empirical formula CH2O and molar mass 60.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"C2H4O2",
+"solution":"Empirical mass = 30\nMultiplier = 60/30 = 2\nMolecular formula = C2H4O2"
+},
+{
+"id":38,
+"type":"MCQ",
+"question":"Which compound corresponds to structure shown?",
+"options":{
+"A":{"image":"q38_optA.png"},
+"B":{"image":"q38_optB.png"},
+"C":{"image":"q38_optC.png"},
+"D":{"image":"q38_optD.png"}
+},
+"correct_answer":"B",
+"solution":"Identify functional groups in each option and match structure",
+"question_image":"q38_question.png"
+},
+{
+"id":39,
+"type":"Numerical",
+"question":"Calculate % nitrogen in compound having formula C2H5NO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"15.7",
+"solution":"Molar mass = 75\nN mass = 14\n%N = 14/75 ×100"
+},
+{
+"id":40,
+"type":"MCQ",
+"question":"Which represents correct structure of thyroxine hormone?",
+"options":{
+"A":{"image":"q40_optA.png"},
+"B":{"image":"q40_optB.png"},
+"C":{"image":"q40_optC.png"},
+"D":{"image":"q40_optD.png"}
+},
+"correct_answer":"C",
+"solution":"Match iodine substituted aromatic ether structure",
+"question_image":"q40_question.png",
+"solution_image":"q40_solution.png"
+},
+{
+"id":41,
+"type":"Numerical",
+"question":"Mass of oxygen required to combust 16 g methane is ______ g.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"64",
+"solution":"CH4 +2O2\n16 g CH4 requires 64 g O2"
+},
+{
+"id":42,
+"type":"MCQ",
+"question":"Which is structural isomer pair?",
+"options":{
+"A":{"image":"q42_optA.png"},
+"B":{"image":"q42_optB.png"},
+"C":{"image":"q42_optC.png"},
+"D":{"image":"q42_optD.png"}
+},
+"correct_answer":"A",
+"solution":"Same molecular formula but different connectivity"
+},
+{
+"id":43,
+"type":"Numerical",
+"question":"Calculate mole fraction of A if 2 moles A and 3 moles B present.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.4",
+"solution":"XA = 2/(2+3)=0.4"
+},
+{
+"id":44,
+"type":"MCQ",
+"question":"Which compound shows resonance?",
+"options":{
+"A":{"image":"q44_optA.png"},
+"B":{"image":"q44_optB.png"},
+"C":{"image":"q44_optC.png"},
+"D":{"image":"q44_optD.png"}
+},
+"correct_answer":"B",
+"solution":"Delocalization present"
+},
+{
+"id":45,
+"type":"Numerical",
+"question":"Calculate molarity if 2 moles solute dissolved in 500 mL solution.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"4",
+"solution":"Molarity =2/0.5=4 M"
 }
-]
+]  
