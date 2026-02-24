@@ -206,7 +206,7 @@ else:
     with col2:
         img = st.file_uploader("Upload image")
 
-    # TEXT
+    # TEXT FLOW
     if q:
         ex = exact_match(q)
         if ex:
@@ -215,7 +215,7 @@ else:
             for i, r in enumerate(semantic(q)):
                 show(r, i)
 
-    # IMAGE
+    # IMAGE FLOW
     if img:
         im = Image.open(img)
         st.image(im)
@@ -229,3 +229,31 @@ else:
         else:
             for i, r in enumerate(semantic(text)):
                 show(r, i)
+
+    # ======================
+    # FOOTER
+    # ======================
+    st.markdown("---")
+
+    col1, col2 = st.columns([2,3])
+
+    with col1:
+        st.markdown("### 🚀 AI Doubt Solver")
+        st.markdown("**Created by DM sir**")
+        st.markdown("📩 Contact: dmsir.ai@gmail.com")
+
+    with col2:
+        feedback = st.text_area("💬 Feedback / Suggestions")
+
+        if st.button("Submit Feedback"):
+            if feedback.strip():
+                with open("feedback.txt","a") as f:
+                    f.write(f"{st.session_state.username}: {feedback}\n")
+                st.success("Thank you for feedback 🙌")
+            else:
+                st.warning("Write something first")
+
+    st.markdown(
+        "<center>© 2026 AI Doubt Solver — All rights reserved</center>",
+        unsafe_allow_html=True
+    )
