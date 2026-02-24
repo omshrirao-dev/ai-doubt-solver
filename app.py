@@ -7,58 +7,104 @@ from PIL import Image
 import numpy as np
 import difflib
 
-# ======================
-# 🎨 PREMIUM UI CSS
-# ======================
 st.set_page_config(page_title="AI Doubt Solver", layout="wide")
 
+# ======================
+# 🎨 PREMIUM ANIMATED CSS
+# ======================
 st.markdown("""
 <style>
 
-/* Background */
+/* Animated gradient background */
 .stApp {
-    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    background: linear-gradient(-45deg,#0f172a,#1e1b4b,#312e81,#0f766e);
+    background-size:400% 400%;
+    animation: gradientBG 18s ease infinite;
 }
 
-/* Hero title */
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Floating glow blobs */
+.stApp:before {
+    content:'';
+    position:fixed;
+    width:300px;
+    height:300px;
+    background:#4f46e5;
+    filter:blur(140px);
+    top:10%;
+    left:10%;
+    opacity:0.4;
+}
+
+.stApp:after {
+    content:'';
+    position:fixed;
+    width:300px;
+    height:300px;
+    background:#06b6d4;
+    filter:blur(140px);
+    bottom:10%;
+    right:10%;
+    opacity:0.4;
+}
+
+/* Hero */
 .hero {
     text-align:center;
-    padding:20px;
+    padding:30px;
+    font-size:56px;
+    font-weight:800;
     color:white;
-    font-size:50px;
-    font-weight:700;
+    animation: fadeIn 1.5s ease;
 }
 
 /* Card */
 .card {
     background: rgba(255,255,255,0.07);
-    padding:20px;
-    border-radius:16px;
+    padding:22px;
+    border-radius:18px;
     margin-bottom:20px;
-    backdrop-filter: blur(12px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.4);
-    transition:0.3s;
+    backdrop-filter: blur(14px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.4);
+    transition:0.35s;
+    animation: fadeInUp 0.8s ease;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 30px rgba(0,0,0,0.5);
+    transform:translateY(-6px) scale(1.01);
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
 }
 
-/* Section title */
+/* Titles */
 .section {
     color:#e0f2fe;
     font-weight:600;
     font-size:22px;
-    margin-top:10px;
+    margin-top:12px;
 }
 
-/* Solution box */
+/* Solution */
 .solution {
-    background:#0f172a;
+    background:#020617;
     padding:15px;
     border-radius:10px;
     margin-top:10px;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+@keyframes fadeInUp{
+    from{opacity:0; transform:translateY(20px)}
+    to{opacity:1; transform:translateY(0)}
 }
 
 </style>
@@ -73,7 +119,6 @@ st.markdown("<div class='hero'>🚀 AI Doubt Solver</div>", unsafe_allow_html=Tr
 with open("chemistry_sample.json") as f:
     dataset=json.load(f)
 
-# MODELS
 model=SentenceTransformer('all-MiniLM-L6-v2')
 reader=easyocr.Reader(['en'],gpu=False)
 
@@ -103,10 +148,9 @@ def show(r,i=None):
 
     st.markdown("<div class='card'>", unsafe_allow_html=True)
 
-    st.markdown(f"<div class='section'>Question</div>", unsafe_allow_html=True)
+    st.markdown("<div class='section'>Question</div>", unsafe_allow_html=True)
     st.write(r.get("question",""))
 
-    # options
     options=r.get("options",{})
     show_options=False
     for v in options.values():
@@ -142,7 +186,7 @@ with col1:
 with col2:
     img=st.file_uploader("📷 Upload image")
 
-# TEXT FLOW
+# TEXT
 if q:
     ex=exact_match(q)
     if ex:
@@ -151,7 +195,7 @@ if q:
         for i,r in enumerate(semantic(q)):
             show(r,i)
 
-# IMAGE FLOW
+# IMAGE
 if img:
     im=Image.open(img)
     st.image(im,width=300)
