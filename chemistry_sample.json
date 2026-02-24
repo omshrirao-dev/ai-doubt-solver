@@ -382,5 +382,925 @@
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"4",
 "solution":"Molarity =2/0.5=4 M"
+},
+{
+"id":46,
+"type":"Numerical",
+"question":"Determine empirical formula of compound containing 40% C, 6.7% H and 53.3% O.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"CH2O",
+"solution":"Assume 100 g sample\nMoles C=40/12\nMoles H=6.7/1\nMoles O=53.3/16\nDivide by smallest → ratio 1:2:1"
+},
+{
+"id":47,
+"type":"Numerical",
+"question":"Calculate molarity when 5 g NaOH dissolved in 250 mL solution.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"Moles NaOH=5/40=0.125\nVolume=0.25 L\nM=0.125/0.25=0.5"
+},
+{
+"id":48,
+"type":"MCQ",
+"question":"Which compound contains hydroxyl functional group?",
+"options":{"A":"CH3OH","B":"CH4","C":"CO2","D":"C2H6"},
+"correct_answer":"A",
+"solution":"Hydroxyl group –OH present in alcohols"
+},
+{
+"id":49,
+"type":"Numerical",
+"question":"Mass of CO2 formed from combustion of 12 g carbon is ______ g.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"44",
+"solution":"12 g C reacts to form 44 g CO2"
+},
+{
+"id":50,
+"type":"MCQ",
+"question":"Which hydrocarbon shows aromaticity?",
+"options":{"A":"Cyclohexane","B":"Benzene","C":"Propane","D":"Ethane"},
+"correct_answer":"B",
+"solution":"Benzene follows Huckel rule"
+},
+{
+"id":51,
+"type":"Numerical",
+"question":"Moles present in 9 g water is ______.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"Moles=9/18=0.5"
+},
+{
+"id":52,
+"type":"Numerical",
+"question":"Volume of 0.25 mol gas at STP is ______ L.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"5.6",
+"solution":"0.25×22.4=5.6"
+},
+{
+"id":53,
+"type":"MCQ",
+"question":"Which molecule shows geometrical isomerism?",
+"options":{"A":"Ethane","B":"But-2-ene","C":"Methane","D":"Propane"},
+"correct_answer":"B",
+"solution":"Restricted rotation around double bond"
+},
+{
+"id":54,
+"type":"Numerical",
+"question":"Mole fraction of B if 2 mol A and 8 mol B present.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.8",
+"solution":"XB=8/(2+8)=0.8"
+},
+{
+"id":55,
+"type":"Numerical",
+"question":"Mass of O2 required for burning 2 mol methane.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"128",
+"solution":"CH4+2O2\n2 mol CH4 needs 4 mol O2\nMass=4×32=128"
+},
+{
+"id":56,
+"type":"MCQ",
+"question":"Which law relates volume and temperature of gas?",
+"options":{"A":"Boyle","B":"Charles","C":"Dalton","D":"Avogadro"},
+"correct_answer":"B",
+"solution":"Charles law V∝T"
+},
+{
+"id":57,
+"type":"Numerical",
+"question":"Find molarity of 1 mol solute in 4 L solution.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.25",
+"solution":"M=1/4=0.25"
+},
+{
+"id":58,
+"type":"MCQ",
+"question":"Which quantity is intensive?",
+"options":{"A":"Mass","B":"Volume","C":"Density","D":"Moles"},
+"correct_answer":"C",
+"solution":"Density independent of amount"
+},
+{
+"id":59,
+"type":"Numerical",
+"question":"Mass of 3 mol O2 is ______ g.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"96",
+"solution":"3×32=96"
+},
+{
+"id":60,
+"type":"MCQ",
+"question":"Which represents mole fraction expression?",
+"options":{"A":"moles component / total moles","B":"mass/volume","C":"density","D":"pressure"},
+"correct_answer":"A",
+"solution":"Definition of mole fraction"
+},
+{
+"id":61,
+"type":"Numerical",
+"question":"Calculate number of molecules in 1 mol of any substance.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"6.022×10^23",
+"solution":"By definition, 1 mole contains Avogadro number of entities"
+},
+{
+"id":62,
+"type":"MCQ",
+"question":"Which of the following is a heterogeneous mixture?",
+"options":{"A":"Salt solution","B":"Air","C":"Milk","D":"Oil and water"},
+"correct_answer":"D",
+"solution":"Oil and water form separate phases"
+},
+{
+"id":63,
+"type":"Numerical",
+"question":"Moles of NaCl present in 5.85 g NaCl.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.1",
+"solution":"Molar mass NaCl=58.5\nMoles=5.85/58.5=0.1"
+},
+{
+"id":64,
+"type":"MCQ",
+"question":"Which is pure substance?",
+"options":{"A":"Air","B":"Salt solution","C":"Distilled water","D":"Milk"},
+"correct_answer":"C",
+"solution":"Distilled water has fixed composition"
+},
+{
+"id":65,
+"type":"Numerical",
+"question":"Volume occupied by 3 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"67.2",
+"solution":"3×22.4=67.2 L"
+},
+{
+"id":66,
+"type":"MCQ",
+"question":"Which law states equal volumes of gases contain equal molecules?",
+"options":{"A":"Boyle","B":"Charles","C":"Avogadro","D":"Dalton"},
+"correct_answer":"C",
+"solution":"Avogadro hypothesis"
+},
+{
+"id":67,
+"type":"Numerical",
+"question":"Mass of 0.2 mol CO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"8.8",
+"solution":"0.2×44=8.8"
+},
+{
+"id":68,
+"type":"MCQ",
+"question":"Which is chemical change?",
+"options":{"A":"Melting ice","B":"Burning wood","C":"Boiling water","D":"Sublimation"},
+"correct_answer":"B",
+"solution":"Burning forms new substances"
+},
+{
+"id":69,
+"type":"Numerical",
+"question":"Calculate molarity if 2 g NaOH in 100 mL solution.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"Moles=2/40=0.05\nVolume=0.1 L\nM=0.5"
+},
+{
+"id":70,
+"type":"MCQ",
+"question":"Which particle has least mass?",
+"options":{"A":"Proton","B":"Neutron","C":"Electron","D":"Alpha"},
+"correct_answer":"C",
+"solution":"Electron has smallest mass"
+},
+{
+"id":71,
+"type":"Numerical",
+"question":"Number of atoms in 0.5 mol helium.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"3.011×10^23",
+"solution":"0.5×6.022×10^23"
+},
+{
+"id":72,
+"type":"MCQ",
+"question":"Which is extensive property?",
+"options":{"A":"Density","B":"Temperature","C":"Mass","D":"Pressure"},
+"correct_answer":"C",
+"solution":"Mass depends on amount"
+},
+{
+"id":73,
+"type":"Numerical",
+"question":"Mass of 0.25 mol H2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"0.25×2=0.5"
+},
+{
+"id":74,
+"type":"MCQ",
+"question":"Which is homogeneous mixture?",
+"options":{"A":"Air","B":"Sand water","C":"Oil water","D":"Soil"},
+"correct_answer":"A",
+"solution":"Air has uniform composition"
+},
+{
+"id":75,
+"type":"Numerical",
+"question":"Find molality of 1 mol solute in 2 kg solvent.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"Molality=1/2"
+},
+{
+"id":76,
+"type":"MCQ",
+"question":"Which element is diatomic gas?",
+"options":{"A":"He","B":"O2","C":"Ne","D":"Ar"},
+"correct_answer":"B",
+"solution":"Oxygen exists as O2"
+},
+{
+"id":77,
+"type":"Numerical",
+"question":"Mass of 1.5 mol N2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"42",
+"solution":"1.5×28=42"
+},
+{
+"id":78,
+"type":"MCQ",
+"question":"Which is physical change?",
+"options":{"A":"Rusting","B":"Combustion","C":"Melting","D":"Fermentation"},
+"correct_answer":"C",
+"solution":"State change only"
+},
+{
+"id":79,
+"type":"Numerical",
+"question":"Moles present in 44 g CO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"1",
+"solution":"44/44=1"
+},
+{
+"id":80,
+"type":"MCQ",
+"question":"Which represents molar volume at STP?",
+"options":{"A":"22.4 L","B":"44 L","C":"11.2 L","D":"1 L"},
+"correct_answer":"A",
+"solution":"1 mol gas occupies 22.4 L"
+},
+{
+"id":81,
+"type":"Numerical",
+"question":"Calculate mass of 2 mol CO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"88",
+"solution":"Mass = moles × molar mass = 2×44 = 88 g"
+},
+{
+"id":82,
+"type":"MCQ",
+"question":"Which scientist proposed atomic theory?",
+"options":{"A":"Dalton","B":"Rutherford","C":"Bohr","D":"Thomson"},
+"correct_answer":"A",
+"solution":"Dalton proposed atomic theory"
+},
+{
+"id":83,
+"type":"Numerical",
+"question":"Number of moles in 16 g oxygen gas.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"Moles = 16/32 = 0.5"
+},
+{
+"id":84,
+"type":"MCQ",
+"question":"Which particle determines atomic number?",
+"options":{"A":"Neutron","B":"Electron","C":"Proton","D":"Nucleus"},
+"correct_answer":"C",
+"solution":"Atomic number equals number of protons"
+},
+{
+"id":85,
+"type":"Numerical",
+"question":"Mass of 0.75 mol water.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"13.5",
+"solution":"0.75×18 = 13.5"
+},
+{
+"id":86,
+"type":"MCQ",
+"question":"Which element is noble gas?",
+"options":{"A":"Oxygen","B":"Neon","C":"Nitrogen","D":"Hydrogen"},
+"correct_answer":"B",
+"solution":"Neon is noble gas"
+},
+{
+"id":87,
+"type":"Numerical",
+"question":"Volume occupied by 0.1 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"2.24",
+"solution":"0.1×22.4 = 2.24"
+},
+{
+"id":88,
+"type":"MCQ",
+"question":"Which is smallest particle?",
+"options":{"A":"Atom","B":"Molecule","C":"Ion","D":"Electron"},
+"correct_answer":"D",
+"solution":"Electron smallest among options"
+},
+{
+"id":89,
+"type":"Numerical",
+"question":"Calculate molarity of 0.5 mol solute in 500 mL solution.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"1",
+"solution":"M=0.5/0.5=1"
+},
+{
+"id":90,
+"type":"MCQ",
+"question":"Which is strong electrolyte?",
+"options":{"A":"Glucose","B":"NaCl","C":"Urea","D":"Sugar"},
+"correct_answer":"B",
+"solution":"NaCl fully ionizes"
+},
+{
+"id":91,
+"type":"Numerical",
+"question":"Mass of 5 mol nitrogen gas.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"140",
+"solution":"5×28=140"
+},
+{
+"id":92,
+"type":"MCQ",
+"question":"Which state of matter has fixed volume but no fixed shape?",
+"options":{"A":"Solid","B":"Liquid","C":"Gas","D":"Plasma"},
+"correct_answer":"B",
+"solution":"Liquids have fixed volume"
+},
+{
+"id":93,
+"type":"Numerical",
+"question":"Moles present in 2 g hydrogen gas.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"1",
+"solution":"2/2=1"
+},
+{
+"id":94,
+"type":"MCQ",
+"question":"Which gas deviates least from ideal behavior?",
+"options":{"A":"CO2","B":"NH3","C":"He","D":"SO2"},
+"correct_answer":"C",
+"solution":"Helium has weak intermolecular forces"
+},
+{
+"id":95,
+"type":"Numerical",
+"question":"Volume of 4 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"89.6",
+"solution":"4×22.4=89.6"
+},
+{
+"id":96,
+"type":"MCQ",
+"question":"Which law explains pressure-volume relationship?",
+"options":{"A":"Boyle","B":"Charles","C":"Avogadro","D":"Dalton"},
+"correct_answer":"A",
+"solution":"Boyle law P∝1/V"
+},
+{
+"id":97,
+"type":"Numerical",
+"question":"Mass of 0.05 mol CaCO3.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"5",
+"solution":"0.05×100=5"
+},
+{
+"id":98,
+"type":"MCQ",
+"question":"Which is example of solution?",
+"options":{"A":"Salt water","B":"Sand","C":"Milk","D":"Smoke"},
+"correct_answer":"A",
+"solution":"Salt water homogeneous mixture"
+},
+{
+"id":99,
+"type":"Numerical",
+"question":"Moles present in 180 g glucose.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"1",
+"solution":"180/180=1"
+},
+{
+"id":100,
+"type":"MCQ",
+"question":"Which quantity represents amount of substance?",
+"options":{"A":"Mass","B":"Volume","C":"Mole","D":"Density"},
+"correct_answer":"C",
+"solution":"Mole measures amount of substance"
+},
+{
+"id":101,
+"type":"Numerical",
+"question":"Calculate mass of 0.3 mol CO.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"8.4",
+"solution":"Molar mass CO = 28\nMass = 0.3×28 = 8.4 g"
+},
+{
+"id":102,
+"type":"MCQ",
+"question":"Which element has maximum electronegativity?",
+"options":{"A":"Fluorine","B":"Oxygen","C":"Nitrogen","D":"Chlorine"},
+"correct_answer":"A",
+"solution":"Fluorine is most electronegative"
+},
+{
+"id":103,
+"type":"Numerical",
+"question":"Volume of 0.75 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"16.8",
+"solution":"0.75×22.4 = 16.8 L"
+},
+{
+"id":104,
+"type":"MCQ",
+"question":"Which bond is strongest?",
+"options":{"A":"Single","B":"Double","C":"Triple","D":"Ionic"},
+"correct_answer":"C",
+"solution":"Triple bond has highest bond order"
+},
+{
+"id":105,
+"type":"Numerical",
+"question":"Mass of 0.4 mol NaCl.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"23.4",
+"solution":"0.4×58.5 = 23.4 g"
+},
+{
+"id":106,
+"type":"MCQ",
+"question":"Which gas is greenhouse gas?",
+"options":{"A":"O2","B":"CO2","C":"N2","D":"He"},
+"correct_answer":"B",
+"solution":"CO2 traps heat"
+},
+{
+"id":107,
+"type":"Numerical",
+"question":"Moles present in 6 g carbon.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"6/12 = 0.5"
+},
+{
+"id":108,
+"type":"MCQ",
+"question":"Which particle is neutral?",
+"options":{"A":"Proton","B":"Electron","C":"Neutron","D":"Ion"},
+"correct_answer":"C",
+"solution":"Neutron has no charge"
+},
+{
+"id":109,
+"type":"Numerical",
+"question":"Mass of 0.25 mol HCl.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"9.1",
+"solution":"0.25×36.5 = 9.1"
+},
+{
+"id":110,
+"type":"MCQ",
+"question":"Which state has highest compressibility?",
+"options":{"A":"Solid","B":"Liquid","C":"Gas","D":"Plasma"},
+"correct_answer":"C",
+"solution":"Gas molecules far apart"
+},
+{
+"id":111,
+"type":"Numerical",
+"question":"Moles present in 11.2 L gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"11.2/22.4 = 0.5"
+},
+{
+"id":112,
+"type":"MCQ",
+"question":"Which is example of compound?",
+"options":{"A":"Air","B":"Water","C":"Steel","D":"Soil"},
+"correct_answer":"B",
+"solution":"Water has fixed composition"
+},
+{
+"id":113,
+"type":"Numerical",
+"question":"Mass of 1.2 mol O2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"38.4",
+"solution":"1.2×32"
+},
+{
+"id":114,
+"type":"MCQ",
+"question":"Which element is metal?",
+"options":{"A":"Oxygen","B":"Nitrogen","C":"Iron","D":"Chlorine"},
+"correct_answer":"C",
+"solution":"Iron is metal"
+},
+{
+"id":115,
+"type":"Numerical",
+"question":"Volume of 0.05 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"1.12",
+"solution":"0.05×22.4"
+},
+{
+"id":116,
+"type":"MCQ",
+"question":"Which is physical property?",
+"options":{"A":"Combustibility","B":"Density","C":"Reactivity","D":"Flammability"},
+"correct_answer":"B",
+"solution":"Density measured without reaction"
+},
+{
+"id":117,
+"type":"Numerical",
+"question":"Moles present in 49 g H2SO4.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"49/98"
+},
+{
+"id":118,
+"type":"MCQ",
+"question":"Which is intensive property?",
+"options":{"A":"Mass","B":"Volume","C":"Density","D":"Length"},
+"correct_answer":"C",
+"solution":"Independent of amount"
+},
+{
+"id":119,
+"type":"Numerical",
+"question":"Mass of 0.02 mol CaCO3.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"2",
+"solution":"0.02×100"
+},
+{
+"id":120,
+"type":"MCQ",
+"question":"Which represents Avogadro number?",
+"options":{"A":"6.022×10^23","B":"3×10^8","C":"10^23","D":"22.4"},
+"correct_answer":"A",
+"solution":"Defined constant"
+},
+{
+"id":121,
+"type":"Numerical",
+"question":"Mass of 0.6 mol CO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"26.4",
+"solution":"Mass = 0.6 × 44 = 26.4 g"
+},
+{
+"id":122,
+"type":"MCQ",
+"question":"Which particle carries negative charge?",
+"options":{"A":"Proton","B":"Electron","C":"Neutron","D":"Alpha"},
+"correct_answer":"B",
+"solution":"Electron is negatively charged"
+},
+{
+"id":123,
+"type":"Numerical",
+"question":"Moles present in 27 g Al.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"1",
+"solution":"27/27 = 1 mol"
+},
+{
+"id":124,
+"type":"MCQ",
+"question":"Which of the following is a mixture?",
+"options":{"A":"Water","B":"Air","C":"Sodium chloride","D":"Carbon dioxide"},
+"correct_answer":"B",
+"solution":"Air contains several gases"
+},
+{
+"id":125,
+"type":"Numerical",
+"question":"Volume of 1.5 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"33.6",
+"solution":"1.5 × 22.4 = 33.6 L"
+},
+{
+"id":126,
+"type":"MCQ",
+"question":"Which element has atomic number 1?",
+"options":{"A":"Helium","B":"Hydrogen","C":"Lithium","D":"Carbon"},
+"correct_answer":"B",
+"solution":"Hydrogen has atomic number 1"
+},
+{
+"id":127,
+"type":"Numerical",
+"question":"Mass of 0.2 mol H2SO4.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"19.6",
+"solution":"0.2 × 98 = 19.6"
+},
+{
+"id":128,
+"type":"MCQ",
+"question":"Which bond is present in NaCl?",
+"options":{"A":"Covalent","B":"Ionic","C":"Metallic","D":"Hydrogen"},
+"correct_answer":"B",
+"solution":"Electron transfer forms ionic bond"
+},
+{
+"id":129,
+"type":"Numerical",
+"question":"Moles present in 22 g CO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"22/44 = 0.5"
+},
+{
+"id":130,
+"type":"MCQ",
+"question":"Which state has definite shape?",
+"options":{"A":"Gas","B":"Liquid","C":"Solid","D":"Plasma"},
+"correct_answer":"C",
+"solution":"Solids have definite shape"
+},
+{
+"id":131,
+"type":"Numerical",
+"question":"Mass of 2.5 mol oxygen atoms.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"40",
+"solution":"2.5 × 16 = 40"
+},
+{
+"id":132,
+"type":"MCQ",
+"question":"Which element is halogen?",
+"options":{"A":"Sodium","B":"Chlorine","C":"Iron","D":"Calcium"},
+"correct_answer":"B",
+"solution":"Chlorine belongs to halogen group"
+},
+{
+"id":133,
+"type":"Numerical",
+"question":"Volume of 0.02 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.448",
+"solution":"0.02 × 22.4"
+},
+{
+"id":134,
+"type":"MCQ",
+"question":"Which is chemical property?",
+"options":{"A":"Density","B":"Color","C":"Reactivity","D":"Mass"},
+"correct_answer":"C",
+"solution":"Reactivity involves chemical change"
+},
+{
+"id":135,
+"type":"Numerical",
+"question":"Moles present in 64 g O2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"2",
+"solution":"64/32 = 2"
+},
+{
+"id":136,
+"type":"MCQ",
+"question":"Which element is alkaline earth metal?",
+"options":{"A":"Na","B":"Mg","C":"Al","D":"K"},
+"correct_answer":"B",
+"solution":"Magnesium belongs to group 2"
+},
+{
+"id":137,
+"type":"Numerical",
+"question":"Mass of 0.8 mol nitrogen gas.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"22.4",
+"solution":"0.8 × 28"
+},
+{
+"id":138,
+"type":"MCQ",
+"question":"Which gas supports combustion?",
+"options":{"A":"N2","B":"CO2","C":"O2","D":"He"},
+"correct_answer":"C",
+"solution":"Oxygen supports combustion"
+},
+{
+"id":139,
+"type":"Numerical",
+"question":"Volume of 5 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"112",
+"solution":"5 × 22.4"
+},
+{
+"id":140,
+"type":"MCQ",
+"question":"Which unit represents molarity?",
+"options":{"A":"mol/kg","B":"mol/L","C":"g/L","D":"kg/mol"},
+"correct_answer":"B",
+"solution":"Molarity = moles per liter"
+},
+{
+"id":141,
+"type":"Numerical",
+"question":"Mass of 0.15 mol CO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"6.6",
+"solution":"0.15 × 44 = 6.6 g"
+},
+{
+"id":142,
+"type":"MCQ",
+"question":"Which particle has positive charge?",
+"options":{"A":"Electron","B":"Proton","C":"Neutron","D":"Atom"},
+"correct_answer":"B",
+"solution":"Proton carries +1 charge"
+},
+{
+"id":143,
+"type":"Numerical",
+"question":"Moles present in 9 g Al.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.33",
+"solution":"9/27 ≈ 0.33"
+},
+{
+"id":144,
+"type":"MCQ",
+"question":"Which is example of element?",
+"options":{"A":"Water","B":"Carbon dioxide","C":"Iron","D":"Air"},
+"correct_answer":"C",
+"solution":"Iron contains only one type of atom"
+},
+{
+"id":145,
+"type":"Numerical",
+"question":"Volume of 2.25 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"50.4",
+"solution":"2.25 × 22.4"
+},
+{
+"id":146,
+"type":"MCQ",
+"question":"Which bond involves electron sharing?",
+"options":{"A":"Ionic","B":"Covalent","C":"Metallic","D":"Hydrogen"},
+"correct_answer":"B",
+"solution":"Covalent bonds formed by sharing"
+},
+{
+"id":147,
+"type":"Numerical",
+"question":"Mass of 0.05 mol H2O.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.9",
+"solution":"0.05 × 18"
+},
+{
+"id":148,
+"type":"MCQ",
+"question":"Which gas is colorless and odorless?",
+"options":{"A":"Chlorine","B":"Hydrogen","C":"Ammonia","D":"Sulfur dioxide"},
+"correct_answer":"B",
+"solution":"Hydrogen is colorless odorless"
+},
+{
+"id":149,
+"type":"Numerical",
+"question":"Moles present in 100 g CaCO3.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"1",
+"solution":"100/100 = 1"
+},
+{
+"id":150,
+"type":"MCQ",
+"question":"Which state has highest density?",
+"options":{"A":"Solid","B":"Liquid","C":"Gas","D":"Plasma"},
+"correct_answer":"A",
+"solution":"Particles closely packed"
+},
+{
+"id":151,
+"type":"Numerical",
+"question":"Mass of 0.9 mol O2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"28.8",
+"solution":"0.9 × 32"
+},
+{
+"id":152,
+"type":"MCQ",
+"question":"Which is homogeneous mixture?",
+"options":{"A":"Soil","B":"Salt solution","C":"Sand water","D":"Smoke"},
+"correct_answer":"B",
+"solution":"Uniform composition"
+},
+{
+"id":153,
+"type":"Numerical",
+"question":"Volume of 0.4 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"8.96",
+"solution":"0.4 × 22.4"
+},
+{
+"id":154,
+"type":"MCQ",
+"question":"Which is example of compound?",
+"options":{"A":"Hydrogen","B":"Oxygen","C":"Water","D":"Nitrogen"},
+"correct_answer":"C",
+"solution":"Water contains H and O chemically combined"
+},
+{
+"id":155,
+"type":"Numerical",
+"question":"Moles present in 3.6 g water.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.2",
+"solution":"3.6/18"
+},
+{
+"id":156,
+"type":"MCQ",
+"question":"Which is SI unit of amount of substance?",
+"options":{"A":"kg","B":"mol","C":"g","D":"L"},
+"correct_answer":"B",
+"solution":"SI unit is mole"
+},
+{
+"id":157,
+"type":"Numerical",
+"question":"Mass of 0.12 mol CO.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"3.36",
+"solution":"0.12 × 28"
+},
+{
+"id":158,
+"type":"MCQ",
+"question":"Which process is endothermic?",
+"options":{"A":"Combustion","B":"Freezing","C":"Melting","D":"Rusting"},
+"correct_answer":"C",
+"solution":"Melting absorbs heat"
+},
+{
+"id":159,
+"type":"Numerical",
+"question":"Volume of 6 mol gas at STP.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"134.4",
+"solution":"6 × 22.4"
+},
+{
+"id":160,
+"type":"MCQ",
+"question":"Which is example of physical change?",
+"options":{"A":"Burning","B":"Rusting","C":"Evaporation","D":"Fermentation"},
+"correct_answer":"C",
+"solution":"Evaporation is phase change"
 }
 ]  
