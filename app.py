@@ -1,3 +1,4 @@
+st.write("APP STARTED")
 def show(r, i=None):
 
     if i is None:
@@ -56,3 +57,4 @@ def show(r, i=None):
             st.write(line)
 
     st.markdown("---")
+
