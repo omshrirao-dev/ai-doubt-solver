@@ -5,7 +5,7 @@
 "question":"20 mL of 2 M NaOH solution is added to 400 mL of 0.5 M NaOH solution. The final concentration of the solution is _________ (Nearest integer).",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"57",
-"solution":"Use mixing formula Mf=(M1V1+M2V2)/(V1+V2). Substitute values to get Mf≈0.571 M = 57×10^-2 M."
+"solution":"Use mixing formula\nMf = (M1V1 + M2V2)/(V1+V2)\nMf = (2×20 + 0.5×400)/420\nMf = (40+200)/420 = 0.571 M\n= 57 × 10^-2 M"
 },
 {
 "id":2,
@@ -13,7 +13,7 @@
 "question":"During S estimation, 160 mg of an organic compound gives 466 mg of barium sulphate. Percentage of sulphur is ______%.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"40",
-"solution":"Use stoichiometric relation between BaSO4 and S to calculate percent sulphur."
+"solution":"Millimoles of BaSO4 = 466/233 = 2 mmol\nMass of S corresponding = 2×32 = 64 mg\n%S = (64/160)×100 = 40%"
 },
 {
 "id":3,
@@ -21,7 +21,7 @@
 "question":"When 81 g Al reacts with 128 g O2, mass of Al2O3 formed is ______ g.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"153",
-"solution":"Find moles, identify limiting reagent Al, compute Al2O3 mass using stoichiometry."
+"solution":"Moles Al = 81/27 = 3\nMoles O2 = 128/32 = 4\nAl is limiting\nReaction: 4Al → 2Al2O3\n3 mol Al gives 1.5 mol Al2O3\nMass = 1.5×102 = 153 g"
 },
 {
 "id":4,
@@ -29,7 +29,7 @@
 "question":"0.01 mole of organic compound produced 0.9 g water on combustion. Molar mass is ______.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"100",
-"solution":"Determine H content from water then %H to compute molar mass."
+"solution":"Moles H2O = 0.9/18 = 0.05\nMoles H atoms = 0.1\n%H = (0.1/0.01)/M\nSolve → M = 100"
 },
 {
 "id":5,
@@ -37,7 +37,7 @@
 "question":"X g benzoic acid reacts with NaHCO3 releasing CO2 of 11.2 L at STP. X is ______ g.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"61",
-"solution":"CO2 moles=0.5 so benzoic acid moles=0.5 → mass=0.5×122."
+"solution":"CO2 moles = 11.2/22.4 = 0.5\nBenzoic acid moles = 0.5\nMass = 0.5×122 = 61 g"
 },
 {
 "id":6,
@@ -45,7 +45,7 @@
 "question":"Blast furnace reaction Fe3O4 + CO produces Fe. Value of iron formed is ______ kg.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"420",
-"solution":"CO is limiting reagent. Use mole ratio to compute Fe mass."
+"solution":"Use limiting reagent concept\nCalculate moles CO\nApply stoichiometry\nConvert Fe moles to kg → 420"
 },
 {
 "id":7,
@@ -53,7 +53,7 @@
 "question":"Empirical formula mass from composition data is ______×10^-1.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"1655",
-"solution":"Convert % composition to mole ratio → empirical formula → mass."
+"solution":"Convert % composition to moles\nDivide by smallest\nGet empirical formula\nCalculate empirical mass"
 },
 {
 "id":8,
@@ -61,7 +61,7 @@
 "question":"Molarity of 70% aqueous monobasic acid solution is ______.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"125",
-"solution":"Use density and mass percent to compute molarity."
+"solution":"Assume 100 g solution\nAcid mass = 70 g\nUse density to find volume\nMolarity = moles/volume"
 },
 {
 "id":9,
@@ -69,7 +69,7 @@
 "question":"0.5 g compound gives 1.46 g CO2. % carbon is ______.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"80",
-"solution":"Convert CO2 mass to carbon mass then percent."
+"solution":"Carbon in CO2 = 12/44\nCarbon mass = 1.46×12/44\n% = (C/0.5)×100 = 80%"
 },
 {
 "id":10,
@@ -77,46 +77,6 @@
 "question":"In Dumas method 0.42 g compound liberates N2 volume ______ mL.",
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"109",
-"solution":"Use mole relation and STP molar volume."
-},
-{
-"id":11,
-"type":"Numerical",
-"question":"X g nitrobenzene nitration gives 4.2 g product. X = ______.",
-"options":{"A":"","B":"","C":"","D":""},
-"correct_answer":"3",
-"solution":"Use mole conservation relation."
-},
-{
-"id":12,
-"type":"Numerical",
-"question":"Mass of FeSO4·7H2O needed to give 12 ppm Fe in 150 kg wheat is ______.",
-"options":{"A":"","B":"","C":"","D":""},
-"correct_answer":"9",
-"solution":"Compute Fe mass then convert to compound mass."
-},
-{
-"id":13,
-"type":"Numerical",
-"question":"CaO produced from heating 150 kg limestone (75% pure) is ______ kg.",
-"options":{"A":"","B":"","C":"","D":""},
-"correct_answer":"63",
-"solution":"Use purity and decomposition stoichiometry."
-},
-{
-"id":14,
-"type":"Numerical",
-"question":"Percentage iodine in thyroxine is ______.",
-"options":{"A":"","B":"","C":"","D":""},
-"correct_answer":"65",
-"solution":"Compute mass fraction of iodine from formula."
-},
-{
-"id":15,
-"type":"Numerical",
-"question":"500 mg compound gives 220 mg CO2. % carbon is ______.",
-"options":{"A":"","B":"","C":"","D":""},
-"correct_answer":"12",
-"solution":"Convert CO2 mass to carbon mass then percentage."
+"solution":"Calculate moles N2\nUse gas equation\nConvert to mL → 109"
 }
 ]
