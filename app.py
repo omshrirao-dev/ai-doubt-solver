@@ -5,51 +5,105 @@ import easyocr
 from PIL import Image
 import numpy as np
 
-# -----------------------
-# Load dataset
-# -----------------------
+# ======================
+# 🎨 SMART CSS DESIGN
+# ======================
+st.markdown("""
+<style>
+
+/* Background gradient */
+.stApp {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+}
+
+/* Glass container */
+.block-container {
+    background: rgba(255,255,255,0.08);
+    padding: 2rem;
+    border-radius: 18px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Input styling */
+.stTextInput > div > div > input {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 10px;
+}
+
+/* File uploader */
+.stFileUploader {
+    background: rgba(255,255,255,0.08);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #e0f2fe;
+}
+
+/* Answer box */
+.stSuccess {
+    border-radius: 12px;
+}
+
+/* Solution box */
+.stInfo {
+    border-radius: 12px;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+# ======================
+# 📂 LOAD DATA
+# ======================
 with open("chemistry_sample.json", "r") as f:
     dataset = json.load(f)
 
-# -----------------------
-# Load embedding model
-# -----------------------
+# ======================
+# 🤖 LOAD MODELS
+# ======================
 model = SentenceTransformer('all-MiniLM-L6-v2')
-
-# -----------------------
-# Load OCR model (cloud-safe)
-# -----------------------
 reader = easyocr.Reader(['en'], gpu=False)
 
-# -----------------------
-# Create embeddings
-# -----------------------
+# ======================
+# 🔍 CREATE EMBEDDINGS
+# ======================
 questions = [item["question"] for item in dataset]
 question_embeddings = model.encode(questions, convert_to_tensor=True)
 
-# -----------------------
-# Semantic solver
-# -----------------------
+# ======================
+# 🔎 SEMANTIC SOLVER
+# ======================
 def semantic_solver(user_question, top_k=3):
     query_embedding = model.encode(user_question, convert_to_tensor=True)
     scores = util.cos_sim(query_embedding, question_embeddings)[0]
     top_results = scores.argsort(descending=True)[:top_k]
     return [dataset[int(idx)] for idx in top_results]
 
-# -----------------------
-# Format solution into steps
-# -----------------------
+# ======================
+# 📝 FORMAT SOLUTION
+# ======================
 def format_solution(solution_text):
     steps = solution_text.replace("\n", ".").split(".")
     return [s.strip() for s in steps if len(s.strip()) > 5]
 
-# -----------------------
-# UI
-# -----------------------
-st.title("📚 AI Doubt Solver + Image Solver")
+# ======================
+# 🚀 HERO SECTION
+# ======================
+st.markdown("""
+<h1 style='text-align:center; font-size:48px;'>🚀 AI Doubt Solver</h1>
+<p style='text-align:center; font-size:18px; color:#cbd5f5;'>
+Instant doubt solving + AI practice generator for students
+</p>
+""", unsafe_allow_html=True)
 
 # ======================
-# TEXT DOUBT
+# ✍️ TEXT DOUBT
 # ======================
 st.subheader("✍️ Type your doubt")
 
@@ -70,7 +124,7 @@ if user_input:
             st.write(f"{j+1}. {s}")
 
 # ======================
-# IMAGE DOUBT
+# 📸 IMAGE DOUBT
 # ======================
 st.subheader("📸 Upload question image")
 
@@ -80,10 +134,7 @@ if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded image")
 
-    # Convert to numpy
     img_array = np.array(image)
-
-    # OCR extraction
     ocr_result = reader.readtext(img_array, detail=0)
     extracted_text = " ".join(ocr_result)
 
