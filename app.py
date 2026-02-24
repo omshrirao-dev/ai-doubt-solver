@@ -7,110 +7,75 @@ from PIL import Image
 import numpy as np
 import difflib
 
-st.set_page_config(page_title="AI Doubt Solver", layout="wide")
+st.set_page_config(layout="wide")
 
 # ======================
-# 🎨 PREMIUM ANIMATED CSS
+# 🎨 THEME ROTATION
 # ======================
-st.markdown("""
+themes = [
+"linear-gradient(-45deg,#0f172a,#1e1b4b,#312e81,#0f766e)",
+"linear-gradient(-45deg,#020617,#6d28d9,#ec4899,#0ea5e9)",
+"linear-gradient(-45deg,#022c22,#0f766e,#06b6d4,#1e3a8a)",
+"linear-gradient(-45deg,#0f172a,#1e40af,#7c3aed,#0ea5e9)",
+"linear-gradient(-45deg,#022c22,#065f46,#1e293b,#0f172a)"
+]
+
+if "theme_index" not in st.session_state:
+    st.session_state.theme_index = 0
+
+def next_theme():
+    st.session_state.theme_index = (st.session_state.theme_index + 1) % len(themes)
+
+# Button
+col1,col2=st.columns([9,1])
+with col2:
+    st.button("🎨", on_click=next_theme)
+
+bg = themes[st.session_state.theme_index]
+
+# ======================
+# CSS
+# ======================
+st.markdown(f"""
 <style>
 
-/* Animated gradient background */
-.stApp {
-    background: linear-gradient(-45deg,#0f172a,#1e1b4b,#312e81,#0f766e);
+.stApp {{
+    background: {bg};
     background-size:400% 400%;
-    animation: gradientBG 18s ease infinite;
-}
+    animation: gradientBG 14s ease infinite;
+}}
 
-@keyframes gradientBG{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
+@keyframes gradientBG{{
+0%{{background-position:0% 50%;}}
+50%{{background-position:100% 50%;}}
+100%{{background-position:0% 50%;}}
+}}
 
-/* Floating glow blobs */
-.stApp:before {
-    content:'';
-    position:fixed;
-    width:300px;
-    height:300px;
-    background:#4f46e5;
-    filter:blur(140px);
-    top:10%;
-    left:10%;
-    opacity:0.4;
-}
+.hero {{
+text-align:center;
+font-size:48px;
+font-weight:800;
+color:white;
+padding:20px;
+}}
 
-.stApp:after {
-    content:'';
-    position:fixed;
-    width:300px;
-    height:300px;
-    background:#06b6d4;
-    filter:blur(140px);
-    bottom:10%;
-    right:10%;
-    opacity:0.4;
-}
+.card {{
+background: rgba(255,255,255,0.07);
+padding:20px;
+border-radius:16px;
+margin-bottom:20px;
+backdrop-filter: blur(12px);
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+transition:0.3s;
+}}
 
-/* Hero */
-.hero {
-    text-align:center;
-    padding:30px;
-    font-size:56px;
-    font-weight:800;
-    color:white;
-    animation: fadeIn 1.5s ease;
-}
-
-/* Card */
-.card {
-    background: rgba(255,255,255,0.07);
-    padding:22px;
-    border-radius:18px;
-    margin-bottom:20px;
-    backdrop-filter: blur(14px);
-    box-shadow:0 8px 25px rgba(0,0,0,0.4);
-    transition:0.35s;
-    animation: fadeInUp 0.8s ease;
-}
-
-.card:hover{
-    transform:translateY(-6px) scale(1.01);
-    box-shadow:0 15px 40px rgba(0,0,0,0.6);
-}
-
-/* Titles */
-.section {
-    color:#e0f2fe;
-    font-weight:600;
-    font-size:22px;
-    margin-top:12px;
-}
-
-/* Solution */
-.solution {
-    background:#020617;
-    padding:15px;
-    border-radius:10px;
-    margin-top:10px;
-}
-
-/* Animations */
-@keyframes fadeIn{
-    from{opacity:0}
-    to{opacity:1}
-}
-
-@keyframes fadeInUp{
-    from{opacity:0; transform:translateY(20px)}
-    to{opacity:1; transform:translateY(0)}
-}
+.card:hover {{
+transform:translateY(-5px);
+}}
 
 </style>
 """, unsafe_allow_html=True)
 
-# HERO
 st.markdown("<div class='hero'>🚀 AI Doubt Solver</div>", unsafe_allow_html=True)
 
 # ======================
@@ -148,45 +113,28 @@ def show(r,i=None):
 
     st.markdown("<div class='card'>", unsafe_allow_html=True)
 
-    st.markdown("<div class='section'>Question</div>", unsafe_allow_html=True)
+    st.write("### Question")
     st.write(r.get("question",""))
 
     options=r.get("options",{})
-    show_options=False
-    for v in options.values():
+    for k,v in options.items():
         if isinstance(v,str) and v.strip():
-            show_options=True
-
-    if show_options:
-        st.markdown("<div class='section'>Options</div>", unsafe_allow_html=True)
-        for k,v in options.items():
-            if isinstance(v,str) and v.strip():
-                st.write(f"{k}) {v}")
+            st.write(f"{k}) {v}")
 
     st.success(f"Correct Answer: {r.get('correct_answer','')}")
 
-    st.markdown("<div class='section'>Solution</div>", unsafe_allow_html=True)
-
     if r.get("solution"):
-        st.markdown("<div class='solution'>", unsafe_allow_html=True)
-        for line in r["solution"].split("\n"):
-            st.write(line)
-        st.markdown("</div>", unsafe_allow_html=True)
+        for l in r["solution"].split("\n"):
+            st.write(l)
 
     st.markdown("</div>", unsafe_allow_html=True)
 
 # ======================
 # INPUT
 # ======================
-col1,col2=st.columns(2)
+q=st.text_input("💬 Ask doubt")
+img=st.file_uploader("📷 Upload image")
 
-with col1:
-    q=st.text_input("💬 Ask doubt")
-
-with col2:
-    img=st.file_uploader("📷 Upload image")
-
-# TEXT
 if q:
     ex=exact_match(q)
     if ex:
@@ -195,7 +143,6 @@ if q:
         for i,r in enumerate(semantic(q)):
             show(r,i)
 
-# IMAGE
 if img:
     im=Image.open(img)
     st.image(im,width=300)
