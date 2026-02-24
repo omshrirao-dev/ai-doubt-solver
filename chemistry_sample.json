@@ -78,5 +78,205 @@
 "options":{"A":"","B":"","C":"","D":""},
 "correct_answer":"109",
 "solution":"Calculate moles N2\nUse gas equation\nConvert to mL → 109"
+},
+{
+"id":11,
+"type":"Numerical",
+"question":"Mass of FeSO4·7H2O required to give 12 ppm Fe in 150 kg wheat is ______ g.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"9",
+"solution":"Fe needed = 12 mg/kg ×150 = 1800 mg = 1.8 g\nMoles Fe = 1.8/56\nEquivalent FeSO4·7H2O mass calculated using molar ratio\n≈ 9 g"
+},
+{
+"id":12,
+"type":"Numerical",
+"question":"CaO produced from heating 150 kg limestone (75% pure) is ______ kg.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"63",
+"solution":"Pure CaCO3 = 150×0.75 = 112.5 kg\nReaction: CaCO3 → CaO\nMass ratio 100→56\nCaO = 112.5×56/100 = 63 kg"
+},
+{
+"id":13,
+"type":"Numerical",
+"question":"Percentage iodine in thyroxine is ______.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"65",
+"solution":"Calculate total molar mass\nMass of iodine atoms\n%I = (mass I / molar mass)×100 ≈ 65%"
+},
+{
+"id":14,
+"type":"Numerical",
+"question":"500 mg compound gives 220 mg CO2. % carbon is ______.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"12",
+"solution":"C fraction in CO2 = 12/44\nMass C = 220×12/44 = 60 mg\n% = 60/500×100 = 12%"
+},
+{
+"id":15,
+"type":"MCQ",
+"question":"Molality of NaCl solution with 0.2 mol solute in 0.5 kg solvent is:",
+"options":{"A":"0.4 m","B":"0.2 m","C":"0.1 m","D":"1 m"},
+"correct_answer":"A",
+"solution":"Molality = moles/kg solvent = 0.2/0.5 = 0.4 m"
+},
+{
+"id":16,
+"type":"MCQ",
+"question":"Which law explains conservation of mass in chemical reaction?",
+"options":{"A":"Dalton law","B":"Lavoisier law","C":"Boyle law","D":"Charles law"},
+"correct_answer":"B",
+"solution":"Law of conservation of mass proposed by Lavoisier."
+},
+{
+"id":17,
+"type":"MCQ",
+"question":"Empirical formula of compound with CH2 ratio is:",
+"options":{"A":"CH2","B":"C2H4","C":"C3H6","D":"All"},
+"correct_answer":"A",
+"solution":"Empirical formula is simplest ratio → CH2"
+},
+{
+"id":18,
+"type":"MCQ",
+"question":"Limiting reagent is reactant that:",
+"options":{"A":"is in excess","B":"limits product formation","C":"has highest moles","D":"none"},
+"correct_answer":"B",
+"solution":"Limiting reagent determines maximum product."
+},
+{
+"id":19,
+"type":"MCQ",
+"question":"Molar mass of O2 is:",
+"options":{"A":"16","B":"32","C":"8","D":"64"},
+"correct_answer":"B",
+"solution":"O2 contains 2 oxygen atoms → 32"
+},
+{
+"id":20,
+"type":"MCQ",
+"question":"Avogadro number equals:",
+"options":{"A":"6.022×10^23","B":"10^23","C":"3×10^8","D":"None"},
+"correct_answer":"A",
+"solution":"Defined as number of entities in one mole."
+},
+{
+"id":21,
+"type":"MCQ",
+"question":"Which of the following is an extensive property?",
+"options":{"A":"Temperature","B":"Pressure","C":"Mass","D":"Density"},
+"correct_answer":"C",
+"solution":"Extensive properties depend on amount of substance. Mass changes with amount."
+},
+{
+"id":22,
+"type":"MCQ",
+"question":"Which pair represents intensive properties?",
+"options":{"A":"Mass & volume","B":"Temperature & pressure","C":"Volume & mass","D":"Mass & density"},
+"correct_answer":"B",
+"solution":"Intensive properties do not depend on amount → temperature and pressure."
+},
+{
+"id":23,
+"type":"MCQ",
+"question":"Empirical formula of glucose (C6H12O6) is:",
+"options":{"A":"C6H12O6","B":"CH2O","C":"C3H6O3","D":"CHO"},
+"correct_answer":"B",
+"solution":"Divide all subscripts by 6 → CH2O."
+},
+{
+"id":24,
+"type":"MCQ",
+"question":"Number of atoms in 1 mole of helium gas is:",
+"options":{"A":"6.022×10^23","B":"3.011×10^23","C":"12.044×10^23","D":"1"},
+"correct_answer":"A",
+"solution":"Helium is monoatomic → atoms equal Avogadro number."
+},
+{
+"id":25,
+"type":"Numerical",
+"question":"Calculate number of moles in 11 g CO2.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.25",
+"solution":"Molar mass CO2 = 44\nMoles = 11/44 = 0.25"
+},
+{
+"id":26,
+"type":"Numerical",
+"question":"Mass of 0.5 mole H2O is ______ g.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"9",
+"solution":"Molar mass H2O = 18\nMass = 0.5×18 = 9 g"
+},
+{
+"id":27,
+"type":"Numerical",
+"question":"Number of molecules in 0.5 mole O2 is ______ ×10^23.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"3.01",
+"solution":"0.5×6.022×10^23 = 3.01×10^23"
+},
+{
+"id":28,
+"type":"MCQ",
+"question":"Law of definite proportions was proposed by:",
+"options":{"A":"Dalton","B":"Proust","C":"Lavoisier","D":"Gay-Lussac"},
+"correct_answer":"B",
+"solution":"Joseph Proust proposed law of definite proportions."
+},
+{
+"id":29,
+"type":"MCQ",
+"question":"Which law explains combining volumes of gases?",
+"options":{"A":"Boyle","B":"Charles","C":"Gay-Lussac","D":"Dalton"},
+"correct_answer":"C",
+"solution":"Gay-Lussac law explains combining gaseous volumes."
+},
+{
+"id":30,
+"type":"Numerical",
+"question":"Mass of 22.4 L CO2 at STP is ______ g.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"44",
+"solution":"22.4 L = 1 mole at STP\nMass = molar mass = 44 g"
+},
+{
+"id":31,
+"type":"Numerical",
+"question":"Volume of 2 moles gas at STP is ______ L.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"44.8",
+"solution":"1 mole = 22.4 L\n2 moles = 44.8 L"
+},
+{
+"id":32,
+"type":"MCQ",
+"question":"Which quantity is dimensionless?",
+"options":{"A":"Mole fraction","B":"Mass","C":"Volume","D":"Temperature"},
+"correct_answer":"A",
+"solution":"Mole fraction is ratio → dimensionless."
+},
+{
+"id":33,
+"type":"MCQ",
+"question":"Mole fraction of component is ratio of:",
+"options":{"A":"mass/mass","B":"moles/total moles","C":"volume/volume","D":"mass/volume"},
+"correct_answer":"B",
+"solution":"Defined as moles of component divided by total moles."
+},
+{
+"id":34,
+"type":"Numerical",
+"question":"Find molarity of solution containing 1 mole solute in 2 L solution.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"Molarity = moles/volume = 1/2 = 0.5 M"
+},
+{
+"id":35,
+"type":"Numerical",
+"question":"Find molality of solution containing 2 moles solute in 4 kg solvent.",
+"options":{"A":"","B":"","C":"","D":""},
+"correct_answer":"0.5",
+"solution":"Molality = moles/kg solvent = 2/4 = 0.5 m"
 }
 ]
