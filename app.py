@@ -27,6 +27,9 @@ def next_theme():
 
 bg = themes[st.session_state.theme_index]
 
+# ======================
+# GLOBAL CSS
+# ======================
 st.markdown(f"""
 <style>
 .stApp {{
@@ -46,9 +49,9 @@ st.markdown(f"""
     padding:40px;
     border-radius:16px;
     backdrop-filter: blur(12px);
-    width:400px;
+    width:420px;
     margin:auto;
-    margin-top:120px;
+    margin-top:40px;
     text-align:center;
     box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }}
@@ -57,7 +60,7 @@ st.markdown(f"""
     text-align:center;
     font-size:42px;
     font-weight:800;
-    margin-top:80px;
+    margin-top:60px;
 }}
 
 .card {{
@@ -67,6 +70,26 @@ st.markdown(f"""
     margin-bottom:20px;
     backdrop-filter: blur(12px);
     box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}}
+
+.typewriter {{
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .08em;
+  animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+  width: fit-content;
+}}
+
+@keyframes typing {{
+  from {{ width: 0 }}
+  to {{ width: 100% }}
+}}
+
+@keyframes blink-caret {{
+  from, to {{ border-color: transparent }}
+  50% {{ border-color: white }}
 }}
 
 </style>
@@ -114,6 +137,13 @@ def logout():
 if not st.session_state.logged_in:
 
     st.markdown("<div class='title'>🚀 AI Doubt Solver</div>", unsafe_allow_html=True)
+
+    st.markdown("""
+    <center>
+    <h3 class='typewriter'>Welcome 👋 This is the platform for all your doubts</h3>
+    </center>
+    """, unsafe_allow_html=True)
+
     st.markdown("<div class='login-box'>", unsafe_allow_html=True)
 
     username = st.text_input("Username")
@@ -132,7 +162,6 @@ if not st.session_state.logged_in:
 # ======================
 else:
 
-    # HEADER
     col1, col2, col3 = st.columns([7,1,2])
 
     with col1:
@@ -144,9 +173,7 @@ else:
     with col3:
         st.button("Logout", on_click=logout)
 
-    # ======================
     # LOAD DATASET
-    # ======================
     with open("chemistry_sample.json") as f:
         dataset = json.load(f)
 
@@ -156,9 +183,6 @@ else:
     questions = [d["question"] for d in dataset]
     embeddings = model.encode(questions, convert_to_tensor=True)
 
-    # ======================
-    # SEARCH
-    # ======================
     def exact_match(q):
         scores = [difflib.SequenceMatcher(None, q.lower(), d["question"].lower()).ratio() for d in dataset]
         best = max(scores)
@@ -172,9 +196,6 @@ else:
         idx = sc.argsort(descending=True)[:3]
         return [dataset[int(i)] for i in idx]
 
-    # ======================
-    # DISPLAY
-    # ======================
     def show(r, i=None):
 
         st.markdown("<div class='card'>", unsafe_allow_html=True)
@@ -195,9 +216,6 @@ else:
 
         st.markdown("</div>", unsafe_allow_html=True)
 
-    # ======================
-    # INPUTS
-    # ======================
     col1, col2 = st.columns(2)
 
     with col1:
@@ -206,7 +224,6 @@ else:
     with col2:
         img = st.file_uploader("Upload image")
 
-    # TEXT FLOW
     if q:
         ex = exact_match(q)
         if ex:
@@ -215,7 +232,6 @@ else:
             for i, r in enumerate(semantic(q)):
                 show(r, i)
 
-    # IMAGE FLOW
     if img:
         im = Image.open(img)
         st.image(im)
@@ -230,17 +246,15 @@ else:
             for i, r in enumerate(semantic(text)):
                 show(r, i)
 
-    # ======================
     # FOOTER
-    # ======================
     st.markdown("---")
 
     col1, col2 = st.columns([2,3])
 
     with col1:
         st.markdown("### 🚀 AI Doubt Solver")
-        st.markdown("**Created by DM sir**")
-        st.markdown("📩 Contact: dmsir.ai@gmail.com")
+        st.markdown("**Created by Om**")
+        st.markdown("📩 Contact: om.ai@gmail.com")
 
     with col2:
         feedback = st.text_area("💬 Feedback / Suggestions")
@@ -253,7 +267,4 @@ else:
             else:
                 st.warning("Write something first")
 
-    st.markdown(
-        "<center>© 2026 AI Doubt Solver — All rights reserved</center>",
-        unsafe_allow_html=True
-    )
+    st.markdown("<center>© 2026 AI Doubt Solver — All rights reserved</center>", unsafe_allow_html=True)
