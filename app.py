@@ -10,7 +10,7 @@ import datetime
 st.set_page_config(layout="wide")
 
 # ======================
-# THEME SYSTEM
+# THEME SYSTEM (SAFE)
 # ======================
 
 themes = [
@@ -24,8 +24,14 @@ themes = [
 if "theme_index" not in st.session_state:
     st.session_state.theme_index = 0
 
+
 def next_theme():
+
+    if "theme_index" not in st.session_state:
+        st.session_state.theme_index = 0
+
     st.session_state.theme_index = (st.session_state.theme_index + 1) % len(themes)
+
 
 bg = themes[st.session_state.theme_index]
 
@@ -72,7 +78,6 @@ background:rgba(255,255,255,0.07);
 padding:20px;
 border-radius:16px;
 margin-bottom:20px;
-backdrop-filter:blur(12px);
 }}
 
 .typewriter {{
@@ -98,6 +103,7 @@ from,to {{border-color:transparent}}
 </style>
 
 <audio id="clickSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+
 <script>
 document.addEventListener('click', function() {{
 document.getElementById('clickSound').play();
@@ -144,21 +150,21 @@ if st.session_state.last_visit != today:
 # LOGIN FUNCTIONS
 # ======================
 
-def login(username,password):
+def login(username, password):
 
     for u in users:
 
-        if u["username"]==username and u["password"]==password:
-            st.session_state.logged_in=True
-            st.session_state.username=username
+        if u["username"] == username and u["password"] == password:
+            st.session_state.logged_in = True
+            st.session_state.username = username
             return True
 
     return False
 
 
 def logout():
-    st.session_state.logged_in=False
-    st.session_state.username=None
+    st.session_state.logged_in = False
+    st.session_state.username = None
 
 # ======================
 # LOGIN PAGE
@@ -166,28 +172,27 @@ def logout():
 
 if not st.session_state.logged_in:
 
-    st.markdown("<div class='title'>🚀 AI Doubt Solver</div>",unsafe_allow_html=True)
+    st.markdown("<div class='title'>🚀 AI Doubt Solver</div>", unsafe_allow_html=True)
 
     st.markdown("""
     <center>
     <h3 class='typewriter'>Welcome 👋 This is the platform for all your doubts</h3>
     </center>
-    """,unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
-    st.markdown("<div class='login-box'>",unsafe_allow_html=True)
+    st.markdown("<div class='login-box'>", unsafe_allow_html=True)
 
-    username=st.text_input("Username")
-    password=st.text_input("Password",type="password")
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
 
     if st.button("Login"):
 
-        if login(username,password):
+        if login(username, password):
             st.rerun()
-
         else:
             st.error("Invalid credentials")
 
-    st.markdown("</div>",unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # ======================
 # DASHBOARD
@@ -195,76 +200,74 @@ if not st.session_state.logged_in:
 
 else:
 
-    col1,col2,col3=st.columns([7,1,2])
+    col1, col2, col3 = st.columns([7,1,2])
 
     with col1:
         st.title(f"Welcome {st.session_state.username}")
-        st.success(f"🔥 Streak : {st.session_state.streak} days")
+        st.success(f"🔥 Streak: {st.session_state.streak} days")
 
     with col2:
-        st.button("🎨",on_click=next_theme)
+        st.button("🎨", on_click=next_theme)
 
     with col3:
-        st.button("Logout",on_click=logout)
+        st.button("Logout", on_click=logout)
 
     # ======================
     # LOAD DATASET
     # ======================
 
     with open("chemistry_sample.json") as f:
-        dataset=json.load(f)
+        dataset = json.load(f)
 
-    model=SentenceTransformer('all-MiniLM-L6-v2')
-    reader=easyocr.Reader(['en'],gpu=False)
+    model = SentenceTransformer('all-MiniLM-L6-v2')
+    reader = easyocr.Reader(['en'], gpu=False)
 
-    questions=[d["question"] for d in dataset]
+    questions = [d["question"] for d in dataset]
 
-    embeddings=model.encode(questions,convert_to_tensor=True)
+    embeddings = model.encode(questions, convert_to_tensor=True)
 
     def exact_match(q):
 
-        scores=[difflib.SequenceMatcher(None,q.lower(),d["question"].lower()).ratio() for d in dataset]
+        scores = [difflib.SequenceMatcher(None, q.lower(), d["question"].lower()).ratio() for d in dataset]
 
-        best=max(scores)
+        best = max(scores)
 
-        if best>0.75:
+        if best > 0.75:
             return dataset[scores.index(best)]
 
         return None
 
-
     def semantic(q):
 
-        qe=model.encode(q,convert_to_tensor=True)
+        qe = model.encode(q, convert_to_tensor=True)
 
-        sc=util.cos_sim(qe,embeddings)[0]
+        sc = util.cos_sim(qe, embeddings)[0]
 
-        idx=sc.argsort(descending=True)[:3]
+        idx = sc.argsort(descending=True)[:3]
 
         return [dataset[int(i)] for i in idx]
 
+    def show(r, i=None):
 
-    def show(r,i=None):
-
-        st.markdown("<div class='card'>",unsafe_allow_html=True)
+        st.markdown("<div class='card'>", unsafe_allow_html=True)
 
         st.subheader("Exact Match" if i is None else f"Similar Question {i+1}")
 
-        st.write(r.get("question",""))
+        st.write(r.get("question", ""))
 
-        options=r.get("options",{})
+        options = r.get("options", {})
 
-        for k,v in options.items():
-            if isinstance(v,str) and v.strip():
+        for k, v in options.items():
+            if isinstance(v, str) and v.strip():
                 st.write(f"{k}) {v}")
 
-        st.success(f"Correct Answer: {r.get('correct_answer','')}")
+        st.success(f"Correct Answer: {r.get('correct_answer', '')}")
 
         if r.get("solution"):
             for line in r["solution"].split("\n"):
                 st.write(line)
 
-        st.markdown("</div>",unsafe_allow_html=True)
+        st.markdown("</div>", unsafe_allow_html=True)
 
     # ======================
     # CHAT INPUT
@@ -272,44 +275,43 @@ else:
 
     st.markdown("---")
 
-    q=st.chat_input("💬 Ask your doubt")
+    q = st.chat_input("💬 Ask your doubt")
 
-    img=st.file_uploader("Upload doubt image")
+    img = st.file_uploader("Upload doubt image")
 
     if q:
 
         with st.spinner("Solving your doubt..."):
 
-            ex=exact_match(q)
+            ex = exact_match(q)
 
             if ex:
                 show(ex)
 
             else:
-                for i,r in enumerate(semantic(q)):
-                    show(r,i)
-
+                for i, r in enumerate(semantic(q)):
+                    show(r, i)
 
     if img:
 
         with st.spinner("Reading image..."):
 
-            im=Image.open(img)
+            im = Image.open(img)
 
             st.image(im)
 
-            text=" ".join(reader.readtext(np.array(im),detail=0))
+            text = " ".join(reader.readtext(np.array(im), detail=0))
 
             st.info(text)
 
-            ex=exact_match(text)
+            ex = exact_match(text)
 
             if ex:
                 show(ex)
 
             else:
-                for i,r in enumerate(semantic(text)):
-                    show(r,i)
+                for i, r in enumerate(semantic(text)):
+                    show(r, i)
 
     # ======================
     # FEEDBACK SYSTEM
@@ -317,31 +319,31 @@ else:
 
     st.markdown("---")
 
-    st.subheader("⭐ Give Feedback")
+    st.subheader("⭐ Feedback")
 
-    rating=st.slider("Rate the platform",1,5)
+    rating = st.slider("Rate this platform", 1, 5)
 
-    comment=st.text_area("Your feedback")
+    comment = st.text_area("Your feedback")
 
     if st.button("Submit Feedback"):
 
-        data={
-        "user":st.session_state.username,
-        "rating":rating,
-        "comment":comment,
-        "time":str(datetime.datetime.now())
+        data = {
+            "user": st.session_state.username,
+            "rating": rating,
+            "comment": comment,
+            "time": str(datetime.datetime.now())
         }
 
         try:
             with open("feedback.json") as f:
-                feedback=json.load(f)
+                feedback = json.load(f)
         except:
-            feedback=[]
+            feedback = []
 
         feedback.append(data)
 
-        with open("feedback.json","w") as f:
-            json.dump(feedback,f,indent=4)
+        with open("feedback.json", "w") as f:
+            json.dump(feedback, f, indent=4)
 
         st.success("Thank you for your feedback!")
 
@@ -357,4 +359,4 @@ else:
 
     st.markdown("📩 Contact: om.ai@gmail.com")
 
-    st.markdown("<center>© 2026 AI Doubt Solver - All rights reserved</center>",unsafe_allow_html=True)
+    st.markdown("<center>© 2026 AI Doubt Solver - All rights reserved</center>", unsafe_allow_html=True)
