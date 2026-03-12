@@ -6,115 +6,81 @@ from PIL import Image
 import easyocr
 from sentence_transformers import SentenceTransformer, util
 import datetime
+import time
 
 st.set_page_config(layout="wide")
 
-# ======================
-# THEME SYSTEM (SAFE)
-# ======================
+# -------------------------
+# PREMIUM CSS
+# -------------------------
 
-themes = [
-"linear-gradient(-45deg,#0f172a,#1e1b4b,#312e81,#0f766e)",
-"linear-gradient(-45deg,#020617,#6d28d9,#ec4899,#0ea5e9)",
-"linear-gradient(-45deg,#022c22,#0f766e,#06b6d4,#1e3a8a)",
-"linear-gradient(-45deg,#0f172a,#1e40af,#7c3aed,#0ea5e9)",
-"linear-gradient(-45deg,#022c22,#065f46,#1e293b,#0f172a)"
-]
-
-if "theme_index" not in st.session_state:
-    st.session_state.theme_index = 0
-
-
-def next_theme():
-
-    if "theme_index" not in st.session_state:
-        st.session_state.theme_index = 0
-
-    st.session_state.theme_index = (st.session_state.theme_index + 1) % len(themes)
-
-
-bg = themes[st.session_state.theme_index]
-
-# ======================
-# CSS + SOUND
-# ======================
-
-st.markdown(f"""
+st.markdown("""
 <style>
 
-.stApp {{
-background:{bg};
-background-size:400% 400%;
-animation:gradientBG 15s ease infinite;
-}}
+.stApp{
+background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+color:white;
+}
 
-@keyframes gradientBG{{
-0%{{background-position:0% 50%;}}
-50%{{background-position:100% 50%;}}
-100%{{background-position:0% 50%;}}
-}}
+header{visibility:hidden;}
 
-.title{{
-text-align:center;
-font-size:42px;
-font-weight:800;
-margin-top:60px;
-}}
+.block-container{
+padding-top:1rem;
+}
 
-.login-box {{
-background:rgba(255,255,255,0.08);
-padding:40px;
-border-radius:16px;
-backdrop-filter:blur(12px);
-width:420px;
+.chat-container{
+max-width:900px;
 margin:auto;
-margin-top:40px;
-text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}}
+}
 
-.card {{
-background:rgba(255,255,255,0.07);
-padding:20px;
-border-radius:16px;
-margin-bottom:20px;
-}}
-
-.typewriter {{
-overflow:hidden;
-border-right:.15em solid white;
-white-space:nowrap;
-margin:0 auto;
-letter-spacing:.08em;
-animation:typing 5s steps(40,end), blink .75s step-end infinite;
+.chat-bubble-user{
+background:#2563eb;
+padding:12px 18px;
+border-radius:18px;
+margin-bottom:10px;
 width:fit-content;
-}}
+margin-left:auto;
+}
 
-@keyframes typing {{
-from {{width:0}}
-to {{width:100%}}
-}}
+.chat-bubble-ai{
+background:#1e293b;
+padding:14px 18px;
+border-radius:18px;
+margin-bottom:10px;
+width:fit-content;
+}
 
-@keyframes blink {{
-from,to {{border-color:transparent}}
-50% {{border-color:white}}
-}}
+.footer{
+text-align:center;
+opacity:0.6;
+margin-top:40px;
+}
 
 </style>
-
-<audio id="clickSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
-
-<script>
-document.addEventListener('click', function() {{
-document.getElementById('clickSound').play();
-}});
-</script>
-
 """, unsafe_allow_html=True)
 
-# ======================
+# -------------------------
+# SESSION
+# -------------------------
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+if "streak" not in st.session_state:
+    st.session_state.streak = 1
+
+if "last_visit" not in st.session_state:
+    st.session_state.last_visit = str(datetime.date.today())
+
+today = str(datetime.date.today())
+
+if st.session_state.last_visit != today:
+    st.session_state.streak += 1
+    st.session_state.last_visit = today
+
+# -------------------------
 # LOAD USERS
-# ======================
+# -------------------------
 
 with open("users.json") as f:
     users = json.load(f)
@@ -125,238 +91,238 @@ if "logged_in" not in st.session_state:
 if "username" not in st.session_state:
     st.session_state.username = None
 
-# ======================
-# STREAK SYSTEM
-# ======================
+# -------------------------
+# LOGIN
+# -------------------------
 
-if "last_visit" not in st.session_state:
-    st.session_state.last_visit = None
-
-if "streak" not in st.session_state:
-    st.session_state.streak = 0
-
-today = datetime.date.today()
-
-if st.session_state.last_visit != today:
-
-    if st.session_state.last_visit == today - datetime.timedelta(days=1):
-        st.session_state.streak += 1
-    else:
-        st.session_state.streak = 1
-
-    st.session_state.last_visit = today
-
-# ======================
-# LOGIN FUNCTIONS
-# ======================
-
-def login(username, password):
+def login(username,password):
 
     for u in users:
 
-        if u["username"] == username and u["password"] == password:
-            st.session_state.logged_in = True
-            st.session_state.username = username
+        if u["username"]==username and u["password"]==password:
+            st.session_state.logged_in=True
+            st.session_state.username=username
             return True
 
     return False
 
-
 def logout():
-    st.session_state.logged_in = False
-    st.session_state.username = None
 
-# ======================
+    st.session_state.logged_in=False
+    st.session_state.username=None
+
+# -------------------------
 # LOGIN PAGE
-# ======================
+# -------------------------
 
 if not st.session_state.logged_in:
 
-    st.markdown("<div class='title'>🚀 AI Doubt Solver</div>", unsafe_allow_html=True)
+    st.title("🚀 AI Doubt Solver")
 
-    st.markdown("""
-    <center>
-    <h3 class='typewriter'>Welcome 👋 This is the platform for all your doubts</h3>
-    </center>
-    """, unsafe_allow_html=True)
-
-    st.markdown("<div class='login-box'>", unsafe_allow_html=True)
+    st.markdown(
+    "<h3 style='text-align:center;'>Welcome 👋 This is the platform for all your doubts</h3>",
+    unsafe_allow_html=True
+    )
 
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
 
     if st.button("Login"):
 
-        if login(username, password):
+        if login(username,password):
             st.rerun()
+
         else:
             st.error("Invalid credentials")
 
-    st.markdown("</div>", unsafe_allow_html=True)
-
-# ======================
-# DASHBOARD
-# ======================
+# -------------------------
+# MAIN APP
+# -------------------------
 
 else:
 
-    col1, col2, col3 = st.columns([7,1,2])
+    st.title("🚀 AI Doubt Solver")
 
-    with col1:
-        st.title(f"Welcome {st.session_state.username}")
-        st.success(f"🔥 Streak: {st.session_state.streak} days")
+    st.write(f"Welcome **{st.session_state.username}**")
 
-    with col2:
-        st.button("🎨", on_click=next_theme)
+    st.success(f"🔥 Study Streak: {st.session_state.streak} days")
 
-    with col3:
-        st.button("Logout", on_click=logout)
+    if st.button("Logout"):
+        logout()
+        st.rerun()
 
-    # ======================
+    # -------------------------
     # LOAD DATASET
-    # ======================
+    # -------------------------
 
     with open("chemistry_sample.json") as f:
         dataset = json.load(f)
 
     model = SentenceTransformer('all-MiniLM-L6-v2')
-    reader = easyocr.Reader(['en'], gpu=False)
+    reader = easyocr.Reader(['en'],gpu=False)
 
-    questions = [d["question"] for d in dataset]
+    questions=[d["question"] for d in dataset]
 
-    embeddings = model.encode(questions, convert_to_tensor=True)
+    embeddings=model.encode(questions,convert_to_tensor=True)
+
+    # -------------------------
+    # SEARCH
+    # -------------------------
 
     def exact_match(q):
 
-        scores = [difflib.SequenceMatcher(None, q.lower(), d["question"].lower()).ratio() for d in dataset]
+        scores=[difflib.SequenceMatcher(None,q.lower(),d["question"].lower()).ratio() for d in dataset]
 
-        best = max(scores)
+        best=max(scores)
 
-        if best > 0.75:
+        if best>0.75:
             return dataset[scores.index(best)]
 
         return None
 
+
     def semantic(q):
 
-        qe = model.encode(q, convert_to_tensor=True)
+        qe=model.encode(q,convert_to_tensor=True)
 
-        sc = util.cos_sim(qe, embeddings)[0]
+        sc=util.cos_sim(qe,embeddings)[0]
 
-        idx = sc.argsort(descending=True)[:3]
+        idx=sc.argsort(descending=True)[:3]
 
         return [dataset[int(i)] for i in idx]
 
-    def show(r, i=None):
+    # -------------------------
+    # CHAT HISTORY
+    # -------------------------
 
-        st.markdown("<div class='card'>", unsafe_allow_html=True)
+    for message in st.session_state.messages:
 
-        st.subheader("Exact Match" if i is None else f"Similar Question {i+1}")
+        with st.chat_message(message["role"]):
 
-        st.write(r.get("question", ""))
+            st.markdown(message["content"])
 
-        options = r.get("options", {})
-
-        for k, v in options.items():
-            if isinstance(v, str) and v.strip():
-                st.write(f"{k}) {v}")
-
-        st.success(f"Correct Answer: {r.get('correct_answer', '')}")
-
-        if r.get("solution"):
-            for line in r["solution"].split("\n"):
-                st.write(line)
-
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    # ======================
+    # -------------------------
     # CHAT INPUT
-    # ======================
+    # -------------------------
 
-    st.markdown("---")
+    prompt = st.chat_input("Type your doubt here...")
 
-    q = st.chat_input("💬 Ask your doubt")
+    uploaded_image = st.file_uploader("Upload doubt image", label_visibility="collapsed")
 
-    img = st.file_uploader("Upload doubt image")
+    # -------------------------
+    # TEXT DOUBT
+    # -------------------------
 
-    if q:
+    if prompt:
 
-        with st.spinner("Solving your doubt..."):
+        st.session_state.messages.append(
+        {"role":"user","content":prompt}
+        )
 
-            ex = exact_match(q)
+        with st.chat_message("user"):
+            st.markdown(prompt)
 
-            if ex:
-                show(ex)
+        with st.chat_message("assistant"):
 
-            else:
-                for i, r in enumerate(semantic(q)):
-                    show(r, i)
+            with st.spinner("Solving your doubt..."):
 
-    if img:
+                time.sleep(1)
+
+                ex = exact_match(prompt)
+
+                if ex:
+
+                    answer = ex["solution"]
+
+                else:
+
+                    results = semantic(prompt)
+
+                    answer = results[0]["solution"]
+
+                st.markdown(answer)
+
+        st.session_state.messages.append(
+        {"role":"assistant","content":answer}
+        )
+
+    # -------------------------
+    # IMAGE DOUBT
+    # -------------------------
+
+    if uploaded_image:
+
+        image = Image.open(uploaded_image)
+
+        st.image(image)
 
         with st.spinner("Reading image..."):
 
-            im = Image.open(img)
+            text=" ".join(reader.readtext(np.array(image),detail=0))
 
-            st.image(im)
+        st.session_state.messages.append(
+        {"role":"user","content":text}
+        )
 
-            text = " ".join(reader.readtext(np.array(im), detail=0))
+        with st.chat_message("assistant"):
 
-            st.info(text)
-
-            ex = exact_match(text)
+            ex=exact_match(text)
 
             if ex:
-                show(ex)
+
+                answer=ex["solution"]
 
             else:
-                for i, r in enumerate(semantic(text)):
-                    show(r, i)
 
-    # ======================
-    # FEEDBACK SYSTEM
-    # ======================
+                results=semantic(text)
 
-    st.markdown("---")
+                answer=results[0]["solution"]
+
+            st.markdown(answer)
+
+        st.session_state.messages.append(
+        {"role":"assistant","content":answer}
+        )
+
+    # -------------------------
+    # FEEDBACK
+    # -------------------------
+
+    st.divider()
 
     st.subheader("⭐ Feedback")
 
-    rating = st.slider("Rate this platform", 1, 5)
+    rating=st.slider("Rate platform",1,5)
 
-    comment = st.text_area("Your feedback")
+    comment=st.text_area("Write feedback")
 
     if st.button("Submit Feedback"):
 
-        data = {
-            "user": st.session_state.username,
-            "rating": rating,
-            "comment": comment,
-            "time": str(datetime.datetime.now())
+        data={
+        "user":st.session_state.username,
+        "rating":rating,
+        "comment":comment,
+        "time":str(datetime.datetime.now())
         }
 
         try:
             with open("feedback.json") as f:
-                feedback = json.load(f)
+                feedback=json.load(f)
         except:
-            feedback = []
+            feedback=[]
 
         feedback.append(data)
 
-        with open("feedback.json", "w") as f:
-            json.dump(feedback, f, indent=4)
+        with open("feedback.json","w") as f:
+            json.dump(feedback,f,indent=4)
 
-        st.success("Thank you for your feedback!")
+        st.success("Thank you for feedback!")
 
-    # ======================
+    # -------------------------
     # FOOTER
-    # ======================
+    # -------------------------
 
-    st.markdown("---")
-
-    st.markdown("### 🚀 AI Doubt Solver")
-
-    st.markdown("Created by **Om**")
-
-    st.markdown("📩 Contact: om.ai@gmail.com")
-
-    st.markdown("<center>© 2026 AI Doubt Solver - All rights reserved</center>", unsafe_allow_html=True)
+    st.markdown(
+    "<div class='footer'>Created by Om | © 2026 AI Doubt Solver</div>",
+    unsafe_allow_html=True
+    )
