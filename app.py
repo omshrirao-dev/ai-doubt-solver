@@ -1,105 +1,214 @@
 import streamlit as st
-import openai
+import json
+import difflib
+import numpy as np
+from sentence_transformers import SentenceTransformer, util
+import easyocr
 from PIL import Image
 
-# -------------------------
-# Page Config
-# -------------------------
-st.set_page_config(
-    page_title="AI Doubt Solver",
-    page_icon="🤖",
-    layout="wide"
-)
+st.set_page_config(layout="wide")
 
-st.title("🤖 AI Doubt Solver")
-st.write("Ask your academic doubts and get AI explanations.")
+# ------------------------------
+# 🎨 Theme changer
+# ------------------------------
 
-# -------------------------
-# OpenAI Key
-# -------------------------
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+themes = [
+"linear-gradient(-45deg,#0f172a,#1e1b4b,#312e81,#0f766e)",
+"linear-gradient(-45deg,#020617,#6d28d9,#ec4899,#0ea5e9)",
+"linear-gradient(-45deg,#022c22,#0f766e,#06b6d4,#1e3a8a)",
+"linear-gradient(-45deg,#0f172a,#1e40af,#7c3aed,#0ea5e9)",
+"linear-gradient(-45deg,#022c22,#065f46,#1e293b,#0f172a)"
+]
 
-# -------------------------
-# Session History
-# -------------------------
-if "history" not in st.session_state:
-    st.session_state.history = []
+if "theme_index" not in st.session_state:
+    st.session_state.theme_index = 0
 
-# -------------------------
-# Question Input
-# -------------------------
-st.subheader("Enter your doubt")
+def next_theme():
+    st.session_state.theme_index = (st.session_state.theme_index + 1) % len(themes)
 
-question = st.text_area(
-    "Type your question",
-    height=150
-)
+bg = themes[st.session_state.theme_index]
 
-# -------------------------
-# Image Upload
-# -------------------------
-uploaded_image = st.file_uploader(
-    "Upload question image (optional)",
-    type=["png", "jpg", "jpeg"]
-)
+st.markdown(f"""
+<style>
 
-if uploaded_image:
-    image = Image.open(uploaded_image)
-    st.image(image, caption="Uploaded Question")
+.stApp {{
+background:{bg};
+background-size:400% 400%;
+animation:gradient 15s ease infinite;
+}}
 
-# -------------------------
-# Solve Button
-# -------------------------
-if st.button("Solve Doubt"):
+@keyframes gradient {{
+0% {{background-position:0% 50%;}}
+50% {{background-position:100% 50%;}}
+100% {{background-position:0% 50%;}}
+}}
 
-    if question == "" and uploaded_image is None:
-        st.warning("Please enter a question or upload an image")
+.hero {{
+text-align:center;
+font-size:48px;
+font-weight:700;
+color:white;
+padding:20px;
+}}
+
+.card {{
+background:rgba(255,255,255,0.07);
+padding:20px;
+border-radius:16px;
+margin-bottom:20px;
+backdrop-filter:blur(10px);
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
+transition:0.3s;
+}}
+
+.card:hover {{
+transform:translateY(-5px);
+}}
+
+</style>
+""", unsafe_allow_html=True)
+
+# ------------------------------
+# Header
+# ------------------------------
+
+col1,col2 = st.columns([9,1])
+
+with col1:
+    st.markdown("<div class='hero'>🚀 AI Doubt Solver</div>", unsafe_allow_html=True)
+
+with col2:
+    st.button("🎨", on_click=next_theme)
+
+# ------------------------------
+# Load dataset
+# ------------------------------
+
+with open("chemistry_sample.json") as f:
+    dataset = json.load(f)
+
+questions = [d["question"] for d in dataset]
+
+# ------------------------------
+# Models
+# ------------------------------
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
+embeddings = model.encode(questions, convert_to_tensor=True)
+
+reader = easyocr.Reader(['en'], gpu=False)
+
+# ------------------------------
+# Matching
+# ------------------------------
+
+def exact_match(query):
+
+    scores = [
+        difflib.SequenceMatcher(None, query.lower(), q.lower()).ratio()
+        for q in questions
+    ]
+
+    best = max(scores)
+
+    if best > 0.75:
+        return dataset[scores.index(best)]
+
+    return None
+
+
+def semantic_search(query):
+
+    query_embedding = model.encode(query, convert_to_tensor=True)
+
+    scores = util.cos_sim(query_embedding, embeddings)[0]
+
+    top = scores.argsort(descending=True)[:3]
+
+    return [dataset[int(i)] for i in top]
+
+# ------------------------------
+# Display
+# ------------------------------
+
+def show_question(q):
+
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
+
+    st.subheader("Question")
+    st.write(q["question"])
+
+    options = q.get("options", {})
+
+    visible = any(v.strip() for v in options.values())
+
+    if visible:
+        st.subheader("Options")
+        for k,v in options.items():
+            if v.strip():
+                st.write(f"{k}) {v}")
+
+    st.success(f"Correct Answer: {q.get('correct_answer','')}")
+
+    st.subheader("Solution")
+
+    solution = q.get("solution","")
+
+    for line in solution.split("\n"):
+        st.write(line)
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+# ------------------------------
+# Inputs
+# ------------------------------
+
+col1,col2 = st.columns(2)
+
+with col1:
+    text_query = st.text_input("💬 Ask your doubt")
+
+with col2:
+    img = st.file_uploader("📷 Upload question image")
+
+# ------------------------------
+# Text Search
+# ------------------------------
+
+if text_query:
+
+    result = exact_match(text_query)
+
+    if result:
+        show_question(result)
 
     else:
+        similar = semantic_search(text_query)
 
-        with st.spinner("AI solving your doubt..."):
+        for q in similar:
+            show_question(q)
 
-            prompt = f"""
-You are an expert teacher.
+# ------------------------------
+# Image Search
+# ------------------------------
 
-Explain this question step-by-step so that a student understands clearly.
+if img:
 
-Question:
-{question}
-"""
+    image = Image.open(img)
 
-            response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
-                messages=[
-                    {"role":"system","content":"You are a helpful teacher"},
-                    {"role":"user","content":prompt}
-                ]
-            )
+    st.image(image, width=300)
 
-            answer = response.choices[0].message.content
+    extracted = " ".join(reader.readtext(np.array(image), detail=0))
 
-            st.session_state.history.append({
-                "question": question,
-                "answer": answer
-            })
+    st.info(extracted)
 
-            st.success("Solution generated!")
+    result = exact_match(extracted)
 
-            st.markdown("### 📘 Answer")
-            st.write(answer)
+    if result:
+        show_question(result)
 
-# -------------------------
-# Previous Doubts
-# -------------------------
-st.markdown("---")
-st.subheader("Previous Doubts")
+    else:
+        similar = semantic_search(extracted)
 
-for item in reversed(st.session_state.history):
-
-    with st.expander(item["question"][:80]):
-
-        st.write("**Question:**")
-        st.write(item["question"])
-
-        st.write("**Answer:**")
-        st.write(item["answer"])
+        for q in similar:
+            show_question(q)
