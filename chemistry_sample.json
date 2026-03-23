@@ -1303,4 +1303,777 @@
 "correct_answer":"C",
 "solution":"Evaporation is phase change"
 }
+,
+{
+"id":211,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"The rate of a reaction doubles when temperature is increased from 300 K to 310 K. The activation energy of the reaction is approximately:",
+"options":{
+"A":"52 kJ/mol",
+"B":"25 kJ/mol",
+"C":"105 kJ/mol",
+"D":"75 kJ/mol"
+},
+"correct_answer":"A",
+"solution":"Using Arrhenius equation:\nln(k2/k1) = Ea/R (1/T1 − 1/T2)\n\nGiven k2/k1 = 2\nSolve → Ea ≈ 52 kJ/mol"
+},
+{
+"id":212,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"For a first order reaction, half-life depends on:",
+"options":{
+"A":"Initial concentration",
+"B":"Rate constant",
+"C":"Temperature only",
+"D":"Pressure"
+},
+"correct_answer":"B",
+"solution":"t1/2 = 0.693/k\n\nIndependent of initial concentration"
+},
+{
+"id":213,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"The unit of rate constant for second order reaction is:",
+"options":{
+"A":"s⁻¹",
+"B":"mol L⁻¹ s⁻¹",
+"C":"L mol⁻¹ s⁻¹",
+"D":"mol² L⁻² s⁻¹"
+},
+"correct_answer":"C",
+"solution":"Rate = k[A]²\n\nk = L mol⁻¹ s⁻¹"
+},
+{
+"id":214,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"The order of reaction can be determined by:",
+"options":{
+"A":"Balanced equation",
+"B":"Experimental data",
+"C":"Molecularity",
+"D":"Temperature"
+},
+"correct_answer":"B",
+"solution":"Order is determined experimentally"
+},
+{
+"id":215,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Zero order reaction rate is independent of:",
+"options":{
+"A":"Temperature",
+"B":"Concentration",
+"C":"Pressure",
+"D":"Catalyst"
+},
+"correct_answer":"B",
+"solution":"Rate = k (constant)\n\nIndependent of concentration"
+},
+{
+"id":216,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Half-life of zero order reaction is proportional to:",
+"options":{
+"A":"Initial concentration",
+"B":"1/initial concentration",
+"C":"Constant",
+"D":"Temperature"
+},
+"correct_answer":"A",
+"solution":"t1/2 = [A]0 / 2k"
+},
+{
+"id":217,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Molecularity of elementary reaction can be:",
+"options":{
+"A":"Zero",
+"B":"Fractional",
+"C":"Integer",
+"D":"Negative"
+},
+"correct_answer":"C",
+"solution":"Molecularity is always whole number"
+},
+{
+"id":218,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Arrhenius equation relates:",
+"options":{
+"A":"Rate and pressure",
+"B":"Rate constant and temperature",
+"C":"Rate and concentration",
+"D":"Time and concentration"
+},
+"correct_answer":"B",
+"solution":"k = Ae^(-Ea/RT)"
+},
+{
+"id":219,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Catalyst increases rate by:",
+"options":{
+"A":"Increasing temperature",
+"B":"Lowering activation energy",
+"C":"Changing equilibrium",
+"D":"Increasing pressure"
+},
+"correct_answer":"B",
+"solution":"Catalyst provides alternate pathway with lower Ea"
+},
+{
+"id":220,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"For first order reaction, plot of ln[A] vs time is:",
+"options":{
+"A":"Parabola",
+"B":"Straight line",
+"C":"Hyperbola",
+"D":"Circle"
+},
+"correct_answer":"B",
+"solution":"ln[A] = ln[A]0 − kt"
+},
+{
+"id":221,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Units of rate of reaction are:",
+"options":{
+"A":"mol L⁻¹ s⁻¹",
+"B":"mol² L⁻²",
+"C":"L mol⁻¹",
+"D":"s⁻¹"
+},
+"correct_answer":"A",
+"solution":"Rate = change in concentration/time"
+},
+{
+"id":222,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Activation energy is:",
+"options":{
+"A":"Energy of reactants",
+"B":"Energy barrier for reaction",
+"C":"Energy of products",
+"D":"Total energy"
+},
+"correct_answer":"B",
+"solution":"Minimum energy required to start reaction"
+},
+{
+"id":223,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate law for reaction depends on:",
+"options":{
+"A":"Stoichiometry",
+"B":"Experimental observation",
+"C":"Temperature only",
+"D":"Pressure only"
+},
+"correct_answer":"B",
+"solution":"Rate law determined experimentally"
+},
+{
+"id":224,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Order of reaction is zero when rate is:",
+"options":{
+"A":"Constant",
+"B":"Variable",
+"C":"Infinite",
+"D":"Negative"
+},
+"correct_answer":"A",
+"solution":"Rate = k"
+},
+{
+"id":225,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Temperature coefficient indicates:",
+"options":{
+"A":"Pressure change",
+"B":"Rate change with temperature",
+"C":"Concentration change",
+"D":"Volume change"
+},
+"correct_answer":"B",
+"solution":"Rate increases with temperature rise"
+}
+,
+{
+"id":226,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"For a first order reaction, the time required for 99% completion is:",
+"options":{
+"A":"2.303/k",
+"B":"4.606/k",
+"C":"6.909/k",
+"D":"9.21/k"
+},
+"correct_answer":"B",
+"solution":"t = 2.303/k log(100)\n= 2.303/k × 2\n= 4.606/k"
+},
+{
+"id":227,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"For a first order reaction, graph of log[A] vs time is:",
+"options":{
+"A":"Curve",
+"B":"Straight line",
+"C":"Circle",
+"D":"Parabola"
+},
+"correct_answer":"B",
+"solution":"log[A] = log[A]0 − kt/2.303"
+},
+{
+"id":228,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"If rate = k[A][B], order of reaction is:",
+"options":{
+"A":"1",
+"B":"2",
+"C":"3",
+"D":"0"
+},
+"correct_answer":"B",
+"solution":"Order = 1 + 1 = 2"
+},
+{
+"id":229,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Half-life of first order reaction is:",
+"options":{
+"A":"k/0.693",
+"B":"0.693/k",
+"C":"1/k",
+"D":"2/k"
+},
+"correct_answer":"B",
+"solution":"t1/2 = 0.693/k"
+},
+{
+"id":230,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Which reaction has constant half-life?",
+"options":{
+"A":"Zero order",
+"B":"First order",
+"C":"Second order",
+"D":"Third order"
+},
+"correct_answer":"B",
+"solution":"First order reaction half-life is constant"
+},
+{
+"id":231,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Unit of rate constant for zero order reaction is:",
+"options":{
+"A":"s⁻¹",
+"B":"mol L⁻¹ s⁻¹",
+"C":"L mol⁻¹ s⁻¹",
+"D":"mol² L⁻² s⁻¹"
+},
+"correct_answer":"B",
+"solution":"Rate = k → unit same as rate"
+},
+{
+"id":232,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate constant depends on:",
+"options":{
+"A":"Concentration",
+"B":"Temperature",
+"C":"Time",
+"D":"Pressure"
+},
+"correct_answer":"B",
+"solution":"Rate constant depends only on temperature"
+},
+{
+"id":233,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Activation energy is lowered by:",
+"options":{
+"A":"Catalyst",
+"B":"Temperature",
+"C":"Pressure",
+"D":"Volume"
+},
+"correct_answer":"A",
+"solution":"Catalyst lowers activation energy"
+},
+{
+"id":234,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Which has highest rate?",
+"options":{
+"A":"Low Ea",
+"B":"High Ea",
+"C":"Same Ea",
+"D":"Zero Ea"
+},
+"correct_answer":"A",
+"solution":"Lower activation energy → faster reaction"
+},
+{
+"id":235,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Molecularity can be:",
+"options":{
+"A":"Fractional",
+"B":"Zero",
+"C":"Positive integer",
+"D":"Negative"
+},
+"correct_answer":"C",
+"solution":"Molecularity always whole number"
+},
+{
+"id":236,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Order can be:",
+"options":{
+"A":"Fractional",
+"B":"Negative",
+"C":"Zero",
+"D":"All of these"
+},
+"correct_answer":"D",
+"solution":"Order can be zero, fractional, negative"
+},
+{
+"id":237,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate law is valid for:",
+"options":{
+"A":"Elementary reaction",
+"B":"Complex reaction",
+"C":"Both",
+"D":"None"
+},
+"correct_answer":"C",
+"solution":"Rate law applies generally"
+},
+{
+"id":238,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Slope of ln[A] vs time gives:",
+"options":{
+"A":"k",
+"B":"−k",
+"C":"1/k",
+"D":"−1/k"
+},
+"correct_answer":"B",
+"solution":"Slope = −k"
+},
+{
+"id":239,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Temperature increase increases rate due to:",
+"options":{
+"A":"More collisions",
+"B":"Higher energy molecules",
+"C":"Both",
+"D":"None"
+},
+"correct_answer":"C",
+"solution":"Both frequency and energy increase"
+},
+{
+"id":240,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Arrhenius factor A represents:",
+"options":{
+"A":"Energy",
+"B":"Frequency factor",
+"C":"Temperature",
+"D":"Pressure"
+},
+"correct_answer":"B",
+"solution":"A = frequency factor"
+},
+{
+"id":241,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"If reaction order is zero, concentration vs time graph is:",
+"options":{
+"A":"Straight line",
+"B":"Curve",
+"C":"Hyperbola",
+"D":"Circle"
+},
+"correct_answer":"A",
+"solution":"[A] = [A]0 − kt"
+},
+{
+"id":242,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Second order half-life depends on:",
+"options":{
+"A":"Initial concentration",
+"B":"Temperature",
+"C":"Pressure",
+"D":"Time"
+},
+"correct_answer":"A",
+"solution":"t1/2 ∝ 1/[A]0"
+},
+{
+"id":243,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate increases with catalyst because:",
+"options":{
+"A":"Energy decreases",
+"B":"Ea decreases",
+"C":"Temperature increases",
+"D":"Pressure increases"
+},
+"correct_answer":"B",
+"solution":"Catalyst lowers activation energy"
+},
+{
+"id":244,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Fastest reaction has:",
+"options":{
+"A":"Highest Ea",
+"B":"Lowest Ea",
+"C":"Zero Ea",
+"D":"Infinite Ea"
+},
+"correct_answer":"B",
+"solution":"Lower Ea → faster reaction"
+},
+{
+"id":245,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate law equation is:",
+"options":{
+"A":"Derived theoretically",
+"B":"Derived experimentally",
+"C":"Always given",
+"D":"None"
+},
+"correct_answer":"B",
+"solution":"Rate law determined experimentally"
+}
+,
+{
+"id":226,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"For a first order reaction, the time required for 99% completion is:",
+"options":{
+"A":"2.303/k",
+"B":"4.606/k",
+"C":"6.909/k",
+"D":"9.21/k"
+},
+"correct_answer":"B",
+"solution":"t = 2.303/k log(100)\n= 2.303/k × 2\n= 4.606/k"
+},
+{
+"id":227,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"For a first order reaction, graph of log[A] vs time is:",
+"options":{
+"A":"Curve",
+"B":"Straight line",
+"C":"Circle",
+"D":"Parabola"
+},
+"correct_answer":"B",
+"solution":"log[A] = log[A]0 − kt/2.303"
+},
+{
+"id":228,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"If rate = k[A][B], order of reaction is:",
+"options":{
+"A":"1",
+"B":"2",
+"C":"3",
+"D":"0"
+},
+"correct_answer":"B",
+"solution":"Order = 1 + 1 = 2"
+},
+{
+"id":229,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Half-life of first order reaction is:",
+"options":{
+"A":"k/0.693",
+"B":"0.693/k",
+"C":"1/k",
+"D":"2/k"
+},
+"correct_answer":"B",
+"solution":"t1/2 = 0.693/k"
+},
+{
+"id":230,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Which reaction has constant half-life?",
+"options":{
+"A":"Zero order",
+"B":"First order",
+"C":"Second order",
+"D":"Third order"
+},
+"correct_answer":"B",
+"solution":"First order reaction half-life is constant"
+},
+{
+"id":231,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Unit of rate constant for zero order reaction is:",
+"options":{
+"A":"s⁻¹",
+"B":"mol L⁻¹ s⁻¹",
+"C":"L mol⁻¹ s⁻¹",
+"D":"mol² L⁻² s⁻¹"
+},
+"correct_answer":"B",
+"solution":"Rate = k → unit same as rate"
+},
+{
+"id":232,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate constant depends on:",
+"options":{
+"A":"Concentration",
+"B":"Temperature",
+"C":"Time",
+"D":"Pressure"
+},
+"correct_answer":"B",
+"solution":"Rate constant depends only on temperature"
+},
+{
+"id":233,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Activation energy is lowered by:",
+"options":{
+"A":"Catalyst",
+"B":"Temperature",
+"C":"Pressure",
+"D":"Volume"
+},
+"correct_answer":"A",
+"solution":"Catalyst lowers activation energy"
+},
+{
+"id":234,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Which has highest rate?",
+"options":{
+"A":"Low Ea",
+"B":"High Ea",
+"C":"Same Ea",
+"D":"Zero Ea"
+},
+"correct_answer":"A",
+"solution":"Lower activation energy → faster reaction"
+},
+{
+"id":235,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Molecularity can be:",
+"options":{
+"A":"Fractional",
+"B":"Zero",
+"C":"Positive integer",
+"D":"Negative"
+},
+"correct_answer":"C",
+"solution":"Molecularity always whole number"
+},
+{
+"id":236,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Order can be:",
+"options":{
+"A":"Fractional",
+"B":"Negative",
+"C":"Zero",
+"D":"All of these"
+},
+"correct_answer":"D",
+"solution":"Order can be zero, fractional, negative"
+},
+{
+"id":237,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate law is valid for:",
+"options":{
+"A":"Elementary reaction",
+"B":"Complex reaction",
+"C":"Both",
+"D":"None"
+},
+"correct_answer":"C",
+"solution":"Rate law applies generally"
+},
+{
+"id":238,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Slope of ln[A] vs time gives:",
+"options":{
+"A":"k",
+"B":"−k",
+"C":"1/k",
+"D":"−1/k"
+},
+"correct_answer":"B",
+"solution":"Slope = −k"
+},
+{
+"id":239,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Temperature increase increases rate due to:",
+"options":{
+"A":"More collisions",
+"B":"Higher energy molecules",
+"C":"Both",
+"D":"None"
+},
+"correct_answer":"C",
+"solution":"Both frequency and energy increase"
+},
+{
+"id":240,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Arrhenius factor A represents:",
+"options":{
+"A":"Energy",
+"B":"Frequency factor",
+"C":"Temperature",
+"D":"Pressure"
+},
+"correct_answer":"B",
+"solution":"A = frequency factor"
+},
+{
+"id":241,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"If reaction order is zero, concentration vs time graph is:",
+"options":{
+"A":"Straight line",
+"B":"Curve",
+"C":"Hyperbola",
+"D":"Circle"
+},
+"correct_answer":"A",
+"solution":"[A] = [A]0 − kt"
+},
+{
+"id":242,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Second order half-life depends on:",
+"options":{
+"A":"Initial concentration",
+"B":"Temperature",
+"C":"Pressure",
+"D":"Time"
+},
+"correct_answer":"A",
+"solution":"t1/2 ∝ 1/[A]0"
+},
+{
+"id":243,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate increases with catalyst because:",
+"options":{
+"A":"Energy decreases",
+"B":"Ea decreases",
+"C":"Temperature increases",
+"D":"Pressure increases"
+},
+"correct_answer":"B",
+"solution":"Catalyst lowers activation energy"
+},
+{
+"id":244,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Fastest reaction has:",
+"options":{
+"A":"Highest Ea",
+"B":"Lowest Ea",
+"C":"Zero Ea",
+"D":"Infinite Ea"
+},
+"correct_answer":"B",
+"solution":"Lower Ea → faster reaction"
+},
+{
+"id":245,
+"subject":"chemistry",
+"chapter":"Chemical Kinetics",
+"question":"Rate law equation is:",
+"options":{
+"A":"Derived theoretically",
+"B":"Derived experimentally",
+"C":"Always given",
+"D":"None"
+},
+"correct_answer":"B",
+"solution":"Rate law determined experimentally"
+}
 ]  
