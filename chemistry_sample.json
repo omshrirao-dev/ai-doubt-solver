@@ -2075,5 +2075,2620 @@
 },
 "correct_answer":"B",
 "solution":"Rate law determined experimentally"
+},
+  
+ {
+    "id": 246,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Which of the following electronegativity order is incorrect?",
+    "options": {
+      "A": "S < Cl < O < F",
+      "B": "Al < Si < C < N",
+      "C": "Al < Mg < B < N",
+      "D": "Mg < Be < B < N"
+    },
+    "correct_answer": "C",
+    "solution": "Electronegativity values: Al (1.61), Mg (1.31). Statement Al < Mg is incorrect because 1.61 > 1.31."
+  },
+  {
+    "id": 247,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Match List-I with List-II.",
+    "options": {
+      "A": "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)",
+      "B": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+      "C": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+      "D": "(A)-(IV), (B)-(I), (C)-(III), (D)-(II)"
+    },
+    "correct_answer": "A",
+    "solution": "Isoelectronic ions follow ionic radii trend. Ionisation enthalpy increases across period. Metallic character increases down group. Electronegativity increases across period."
+  },
+  {
+    "id": 248,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Statement I: Elements on extreme left form acidic oxides. Statement II: Oxides of elements on extreme right form acids with water.",
+    "options": {
+      "A": "Both false",
+      "B": "Both true",
+      "C": "I true, II false",
+      "D": "I false, II true"
+    },
+    "correct_answer": "D",
+    "solution": "Left side elements form basic oxides. Right side nonmetals form acidic oxides which produce acids in water."
+  },
+  {
+    "id": 249,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Which element does not belong to same period?",
+    "options": {
+      "A": "Platinum",
+      "B": "Osmium",
+      "C": "Iridium",
+      "D": "Palladium"
+    },
+    "correct_answer": "D",
+    "solution": "Pt, Os, Ir are in period 6 while Pd is in period 5."
+  },
+  {
+    "id": 250,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Atomic number of group 14 element with lowest melting point:",
+    "options": {
+      "A": "14",
+      "B": "50",
+      "C": "6",
+      "D": "82"
+    },
+    "correct_answer": "B",
+    "solution": "Sn (Z=50) has lowest melting point among group 14 elements."
+  },
+  {
+    "id": 251,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Which statements are NOT true about periodic table?",
+    "options": {
+      "A": "A, C and E only",
+      "B": "A and E only",
+      "C": "B, C and E only",
+      "D": "D and E only"
+    },
+    "correct_answer": "A",
+    "solution": "Properties depend on atomic number, not weight. Similar configurations belong to same group, not period. Orbitals do not equal number of elements."
+  },
+  {
+    "id": 252,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Statement I: IE of Pb > Sn. Statement II: IE of Ge > Si.",
+    "options": {
+      "A": "I false, II true",
+      "B": "Both false",
+      "C": "Both true",
+      "D": "I true, II false"
+    },
+    "correct_answer": "D",
+    "solution": "IE decreases down group, so Pb < Sn (false). Ge < Si (true trend reversed in question)."
+  },
+  {
+    "id": 253,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Element belongs to which group if large jump after third ionisation energy?",
+    "options": {
+      "A": "Group 4",
+      "B": "Group 2",
+      "C": "Group 13",
+      "D": "Group 14"
+    },
+    "correct_answer": "C",
+    "solution": "3 valence electrons → Group 13."
+  },
+  {
+    "id": 254,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Most stable oxidation states of elements with highest and lowest IE:",
+    "options": {
+      "A": "+4 and +1",
+      "B": "+4 and +3",
+      "C": "+1 and +4",
+      "D": "+2 and +3"
+    },
+    "correct_answer": "B",
+    "solution": "Ge (+4) highest IE, In (+3) lowest IE."
+  },
+  {
+    "id": 255,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Incorrect decreasing order of atomic radii:",
+    "options": {
+      "A": "Si > P > Cl > F",
+      "B": "Mg > Al > C > O",
+      "C": "Al > B > N > F",
+      "D": "Be > Mg > Al > Si"
+    },
+    "correct_answer": "D",
+    "solution": "Be is smaller than Mg, so order is incorrect."
+  } ,
+  
+  {
+    "id": 256,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Statement I: Law of Octaves arranged elements based on atomic number. Statement II: Meyer plotted properties against atomic number.",
+    "options": {
+      "A": "Both false",
+      "B": "I false, II true",
+      "C": "I true, II false",
+      "D": "Both true"
+    },
+    "correct_answer": "A",
+    "solution": "Law of Octaves used atomic weight, not atomic number. Meyer also used atomic weight, not atomic number."
+  },
+  {
+    "id": 257,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Statement I: Isoelectronic radii increase as Mg2+ < Na+ < F- < O2-. Statement II: Electron gain enthalpy order is Cl > F > Br > I.",
+    "options": {
+      "A": "I incorrect, II correct",
+      "B": "Both correct",
+      "C": "I correct, II incorrect",
+      "D": "Both incorrect"
+    },
+    "correct_answer": "B",
+    "solution": "Cations are smaller than anions in isoelectronic species. Electron gain enthalpy follows Cl > F > Br > I."
+  },
+  {
+    "id": 258,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Correct order of ionic character of EA, EB, EC, ED based on given ionization and electron gain enthalpy:",
+    "options": {
+      "A": "EB > EA > EC > ED",
+      "B": "EA > EB > EC > ED",
+      "C": "ED > EC > EA > EB",
+      "D": "ED > EC > EB > EA"
+    },
+    "correct_answer": "A",
+    "solution": "Greater difference between ionization enthalpy and electron gain enthalpy gives higher ionic character."
+  },
+  {
+    "id": 259,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "First ionization enthalpy of element in apatite family:",
+    "options": {
+      "A": "834 kJ/mol",
+      "B": "947 kJ/mol",
+      "C": "1402 kJ/mol",
+      "D": "1012 kJ/mol"
+    },
+    "correct_answer": "D",
+    "solution": "Phosphorus is main element in apatite. Its ionization enthalpy ≈ 1012 kJ/mol."
+  },
+  {
+    "id": 260,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Oxide formed by element with least atomic radius among Li, Na, Be, Mg, B, Al:",
+    "options": {
+      "A": "AO",
+      "B": "AO2",
+      "C": "A2O",
+      "D": "A2O3"
+    },
+    "correct_answer": "D",
+    "solution": "Boron has smallest radius and forms B2O3 type oxide."
+  },
+  {
+    "id": 261,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Property showing irregularity in first four elements of group 17:",
+    "options": {
+      "A": "All",
+      "B": "A and C",
+      "C": "B only",
+      "D": "B and D"
+    },
+    "correct_answer": "C",
+    "solution": "Electron affinity shows irregularity (Cl > F anomaly)."
+  },
+  {
+    "id": 262,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Statement I: Metallic radius of Al < Ga. Statement II: Ionic radius trend given.",
+    "options": {
+      "A": "I correct, II incorrect",
+      "B": "Both correct",
+      "C": "I incorrect, II correct",
+      "D": "Both incorrect"
+    },
+    "correct_answer": "C",
+    "solution": "Due to d-block contraction Ga is smaller than expected."
+  },
+  {
+    "id": 263,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Correct increasing order of electronegativity from configurations:",
+    "options": {
+      "A": "D < A < B < C",
+      "B": "A < B < C < D",
+      "C": "A < C < B < D",
+      "D": "A < D < B < C"
+    },
+    "correct_answer": "A",
+    "solution": "C < N < O < F → D < A < B < C."
+  },
+  {
+    "id": 264,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Correct statements:",
+    "options": {
+      "A": "A, C and D",
+      "B": "B and C",
+      "C": "B and D",
+      "D": "B, C and E"
+    },
+    "correct_answer": "B",
+    "solution": "Ionization is always endothermic. IE of B < Be due to electronic configuration."
+  },
+  {
+    "id": 265,
+    "subject": "chemistry",
+    "chapter": "Classification of Elements and Periodicity in Properties",
+    "question": "Match family with element symbol:",
+    "options": {
+      "A": "A-IV, B-I, C-II, D-III",
+      "B": "A-IV, B-III, C-I, D-II",
+      "C": "A-III, B-I, C-IV, D-II",
+      "D": "A-II, B-III, C-IV, D-I"
+    },
+    "correct_answer": "B",
+    "solution": "Pnictogen-Mc, Chalcogen-Lv, Halogen-Ts, Noble gas-Og."
+  } ,
+ {
+  "id": 266,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct orders among atomic radius, electronegativity, density and ionisation energy:",
+  "options": {
+    "A": "B and D only",
+    "B": "A and B only",
+    "C": "C and D only",
+    "D": "A and C only"
+  },
+  "correct_answer": "A",
+  "solution": "Correct trends follow periodic behavior and given data. Atomic radius and ionisation energy orders are correct."
+},
+{
+  "id": 267,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Group 13 elements with highest and lowest first ionisation enthalpies respectively:",
+  "options": {
+    "A": "B and Tl",
+    "B": "Tl and B",
+    "C": "B and In",
+    "D": "B and Ga"
+  },
+  "correct_answer": "C",
+  "solution": "B has highest IE, In has lowest due to larger size and shielding."
+},
+{
+  "id": 268,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Incorrect relationship in ionisation enthalpies:",
+  "options": {
+    "A": "Mn2+ < Fe2+",
+    "B": "Mn+ < Mn2+",
+    "C": "Mn+ < Cr+",
+    "D": "Fe2+ < Fe3+"
+  },
+  "correct_answer": "A",
+  "solution": "Half-filled stability of Mn2+ makes it more stable, so relation is incorrect."
+},
+{
+  "id": 269,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Nature of ions for Sn and Pb with lowest ionisation enthalpy:",
+  "options": {
+    "A": "Both reducing",
+    "B": "Oxidising and reducing",
+    "C": "Both oxidising",
+    "D": "Reducing and oxidising"
+  },
+  "correct_answer": "D",
+  "solution": "Sn2+ acts as reducing agent, Pb4+ acts as oxidising agent."
+},
+{
+  "id": 270,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Number of valence electrons in metal with lowest enthalpy of atomisation (Cr, Co, Fe, Ni):",
+  "options": {
+    "A": "10",
+    "B": "6",
+    "C": "9",
+    "D": "8"
+  },
+  "correct_answer": "B",
+  "solution": "Cr has configuration [Ar]3d5 4s1 → 6 valence electrons."
+},
+{
+  "id": 271,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Incorrect trend in atomic radii:",
+  "options": {
+    "A": "Rb < Cs",
+    "B": "At < Cs",
+    "C": "Br < K",
+    "D": "Mg < Al"
+  },
+  "correct_answer": "D",
+  "solution": "Mg is larger than Al, so given order is incorrect."
+},
+{
+  "id": 272,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Statement I: H2Se more acidic than H2Te. Statement II: H2Se has higher bond enthalpy.",
+  "options": {
+    "A": "Both true",
+    "B": "I true, II false",
+    "C": "Both false",
+    "D": "I false, II true"
+  },
+  "correct_answer": "D",
+  "solution": "Acidity increases down group, so H2Te is more acidic. Bond enthalpy decreases down group."
+},
+{
+  "id": 273,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Atomic number with lowest ionisation enthalpy:",
+  "options": {
+    "A": "32",
+    "B": "35",
+    "C": "19",
+    "D": "87"
+  },
+  "correct_answer": "D",
+  "solution": "Francium (Z=87) has lowest ionisation energy."
+},
+{
+  "id": 274,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of electron gain enthalpy of noble gases:",
+  "options": {
+    "A": "Xe < Kr < Ne < He",
+    "B": "He < Ne < Kr < Xe",
+    "C": "He < Xe < Kr < Ne",
+    "D": "He < Kr < Xe < Ne"
+  },
+  "correct_answer": "C",
+  "solution": "Electron gain enthalpy becomes less positive down the group."
+},
+{
+  "id": 275,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of metallic character:",
+  "options": {
+    "A": "Si < Be < Mg < K",
+    "B": "Be < Si < Mg < K",
+    "C": "K < Mg < Be < Si",
+    "D": "Be < Si < K < Mg"
+  },
+  "correct_answer": "A",
+  "solution": "Metallic character increases down group and decreases across period."
+},
+  {
+  "id": 276,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Bond dissociation energy is highest for:",
+  "options": {
+    "A": "Cl2",
+    "B": "I2",
+    "C": "Br2",
+    "D": "F2"
+  },
+  "correct_answer": "A",
+  "solution": "Bond energy order: Cl2 > Br2 > F2 > I2 due to optimal size and lesser repulsion."
+},
+{
+  "id": 277,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Match atomic number with block in periodic table:",
+  "options": {
+    "A": "A-II, B-IV, C-I, D-III",
+    "B": "A-I, B-III, C-IV, D-II",
+    "C": "A-IV, B-III, C-II, D-I",
+    "D": "A-IV, B-II, C-I, D-III"
+  },
+  "correct_answer": "D",
+  "solution": "37→s-block, 78→d-block, 52→p-block, 65→f-block."
+},
+{
+  "id": 278,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct increasing order of ionic radii:",
+  "options": {
+    "A": "Cl- < Ca2+ < K+ < S2-",
+    "B": "K+ < S2- < Ca2+ < Cl-",
+    "C": "S2- < Cl- < Ca2+ < K+",
+    "D": "Ca2+ < K+ < Cl- < S2-"
+  },
+  "correct_answer": "D",
+  "solution": "For isoelectronic species, radius ∝ 1/Z. Higher nuclear charge → smaller radius."
+},
+{
+  "id": 279,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Electronic configuration of Nd2+:",
+  "options": {
+    "A": "4f2 6s2",
+    "B": "4f4",
+    "C": "4f3",
+    "D": "4f4 6s2"
+  },
+  "correct_answer": "B",
+  "solution": "Nd: [Xe]4f4 6s2 → Nd2+ loses 6s electrons → [Xe]4f4."
+},
+{
+  "id": 280,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Assertion: IE of 3d series > group 2 metals. Reason: d orbitals are being filled.",
+  "options": {
+    "A": "Both true and correct",
+    "B": "Both true but incorrect reason",
+    "C": "Assertion false, Reason true",
+    "D": "Assertion true, Reason false"
+  },
+  "correct_answer": "C",
+  "solution": "IE of early 3d elements is actually lower than group 2 metals."
+},
+{
+  "id": 281,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Elements with half-filled f orbitals:",
+  "options": {
+    "A": "B and D",
+    "B": "A and E",
+    "C": "A and B",
+    "D": "C and D"
+  },
+  "correct_answer": "A",
+  "solution": "Eu (4f7) and Gd (4f7) have half-filled f orbitals."
+},
+{
+  "id": 282,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Incorrect electron gain enthalpy relation:",
+  "options": {
+    "A": "Cl < F",
+    "B": "Se < S",
+    "C": "I < At",
+    "D": "Te < Po"
+  },
+  "correct_answer": "B",
+  "solution": "Electron gain enthalpy: S > Se, so given order is incorrect."
+},
+{
+  "id": 283,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Element that remains liquid in boiling water:",
+  "options": {
+    "A": "Cs",
+    "B": "Ga",
+    "C": "Li",
+    "D": "Br"
+  },
+  "correct_answer": "B",
+  "solution": "Gallium melts at ~30°C but has very high boiling point, so remains liquid."
+},
+{
+  "id": 284,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Most basic oxide among group 13:",
+  "options": {
+    "A": "Al2O3",
+    "B": "Ga2O3",
+    "C": "Tl2O3",
+    "D": "B2O3"
+  },
+  "correct_answer": "C",
+  "solution": "Basic character increases down group → Tl2O3 most basic."
+},
+{
+  "id": 285,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of electronegativity:",
+  "options": {
+    "A": "P > Br > C > At",
+    "B": "C > P > At > Br",
+    "C": "Br > P > At > C",
+    "D": "Br > C > At > P"
+  },
+  "correct_answer": "D",
+  "solution": "Electronegativity values: Br > C > At > P."
+},
+  
+  {
+  "id": 286,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Assertion: Energy required to form Mg2+ is much higher than Mg+. Reason: Mg2+ is smaller and has higher charge.",
+  "options": {
+    "A": "Both true and correct",
+    "B": "A true, R false",
+    "C": "A false, R true",
+    "D": "Both true but R not correct"
+  },
+  "correct_answer": "A",
+  "solution": "Formation of Mg2+ requires IE1 + IE2. Smaller size and higher charge increases energy required."
+},
+{
+  "id": 287,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of metallic character:",
+  "options": {
+    "A": "K > Be > Ca",
+    "B": "Be > Ca > K",
+    "C": "K > Ca > Be",
+    "D": "Ca > K > Be"
+  },
+  "correct_answer": "C",
+  "solution": "Metallic character increases down group and decreases across period → K > Ca > Be."
+},
+{
+  "id": 288,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "In GaAlCl4, which statement is correct?",
+  "options": {
+    "A": "Cl bonded with both Al and Ga",
+    "B": "Ga coordinated with Cl",
+    "C": "Ga is more electronegative and forms cation",
+    "D": "Oxidation state of Ga is +3"
+  },
+  "correct_answer": "C",
+  "solution": "Ga acts as cation in GaAlCl4 due to higher electronegativity relative to Al."
+},
+{
+  "id": 289,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of first ionisation enthalpy:",
+  "options": {
+    "A": "B > Li > Be > C > N > O > F",
+    "B": "Li < Be < B < C < N < O < F",
+    "C": "Li < Be < B < C < O < N < F",
+    "D": "Li < B < Be < C < O < N < F"
+  },
+  "correct_answer": "D",
+  "solution": "Exception: B < Be and O < N due to stability of filled and half-filled orbitals."
+},
+{
+  "id": 290,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Incorrect statements:",
+  "options": {
+    "A": "A, C and D",
+    "B": "B and D",
+    "C": "A, B and D",
+    "D": "A, B, C and D"
+  },
+  "correct_answer": "A",
+  "solution": "Electron gain enthalpy of Cl > F. NO is neutral oxide, not amphoteric."
+},
+{
+  "id": 291,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of enthalpy of formation of sodium halides:",
+  "options": {
+    "A": "NaI < NaBr < NaF < NaCl",
+    "B": "NaF < NaCl < NaBr < NaI",
+    "C": "NaCl < NaF < NaBr < NaI",
+    "D": "NaI < NaBr < NaCl < NaF"
+  },
+  "correct_answer": "D",
+  "solution": "Enthalpy becomes less negative from fluoride to iodide."
+},
+{
+  "id": 292,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Number of molecules with exactly two lone pairs (H2O, N2, CO, XeF4, NH3, NO, CO2, F2):",
+  "options": {
+    "A": "2",
+    "B": "3",
+    "C": "4",
+    "D": "5"
+  },
+  "correct_answer": "C",
+  "solution": "H2O, N2, CO, XeF4 have exactly two lone pairs."
+},
+{
+  "id": 293,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Metal with highest melting point:",
+  "options": {
+    "A": "Hg",
+    "B": "Ag",
+    "C": "Ga",
+    "D": "Cs"
+  },
+  "correct_answer": "B",
+  "solution": "Silver has highest melting point among given options."
+},
+{
+  "id": 294,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of electron gain enthalpy:",
+  "options": {
+    "A": "F < Cl < Te < Po",
+    "B": "Po < Te < F < Cl",
+    "C": "Te < Po < Cl < F",
+    "D": "Cl < F < Te < Po"
+  },
+  "correct_answer": "B",
+  "solution": "Cl > F > Te > Po, so reverse gives Po < Te < F < Cl."
+},
+{
+  "id": 295,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element is a metalloid?",
+  "options": {
+    "A": "Sc",
+    "B": "Pb",
+    "C": "Bi",
+    "D": "Te"
+  },
+  "correct_answer": "D",
+  "solution": "Tellurium is a metalloid."
+},
+  {
+  "id": 296,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Assertion: Ionic radii of O2− and Mg2+ are same. Reason: Both are isoelectronic.",
+  "options": {
+    "A": "Both true and correct",
+    "B": "Both true but incorrect reason",
+    "C": "Assertion true, Reason false",
+    "D": "Assertion false, Reason true"
+  },
+  "correct_answer": "D",
+  "solution": "Both are isoelectronic but O2− is larger than Mg2+ due to lower nuclear charge."
+},
+{
+  "id": 297,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct order of increasing ionic radii:",
+  "options": {
+    "A": "Mg2+ < Na+ < F− < O2− < N3−",
+    "B": "N3− < O2− < F− < Na+ < Mg2+",
+    "C": "F− < Na+ < O2− < Mg2+ < N3−",
+    "D": "Na+ < F− < Mg2+ < O2− < N3−"
+  },
+  "correct_answer": "A",
+  "solution": "For isoelectronic species, higher nuclear charge → smaller radius."
+},
+{
+  "id": 298,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Element E is in period 4 and group 16. Electronic configuration of element above it:",
+  "options": {
+    "A": "3s2 3p4",
+    "B": "3d10 4s2 4p4",
+    "C": "4d10 5s2 5p4",
+    "D": "2s2 2p4"
+  },
+  "correct_answer": "A",
+  "solution": "Element above Se is S → configuration: 3s2 3p4."
+},
+{
+  "id": 299,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct matching:",
+  "options": {
+    "A": "(A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+    "B": "(A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+    "C": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "D": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)"
+  },
+  "correct_answer": "B",
+  "solution": "Correct matching based on periodic classification."
+},
+{
+  "id": 300,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Assertion: IE of O < N. Reason: Electron-electron repulsion in O.",
+  "options": {
+    "A": "Both true and correct",
+    "B": "Both true but incorrect reason",
+    "C": "A true, R false",
+    "D": "A false, R true"
+  },
+  "correct_answer": "A",
+  "solution": "O has paired electrons causing repulsion, lowering ionisation energy."
+},
+{
+  "id": 301,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Correct trend of atomic radius in a period:",
+  "options": {
+    "A": "Increases left to right",
+    "B": "Decreases left to right",
+    "C": "Constant",
+    "D": "Random"
+  },
+  "correct_answer": "B",
+  "solution": "Atomic radius decreases due to increasing nuclear charge."
+},
+{
+  "id": 302,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which factor affects ionisation energy most?",
+  "options": {
+    "A": "Atomic mass",
+    "B": "Nuclear charge",
+    "C": "Color",
+    "D": "Shape"
+  },
+  "correct_answer": "B",
+  "solution": "Effective nuclear charge strongly affects ionisation energy."
+},
+{
+  "id": 303,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Electronegativity increases:",
+  "options": {
+    "A": "Down the group",
+    "B": "Across the period",
+    "C": "Randomly",
+    "D": "Decreases across period"
+  },
+  "correct_answer": "B",
+  "solution": "Electronegativity increases from left to right."
+},
+{
+  "id": 304,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Metallic character increases:",
+  "options": {
+    "A": "Across period",
+    "B": "Down group",
+    "C": "Up group",
+    "D": "Random"
+  },
+  "correct_answer": "B",
+  "solution": "Metallic character increases down the group."
+},
+{
+  "id": 305,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest electronegativity?",
+  "options": {
+    "A": "Oxygen",
+    "B": "Nitrogen",
+    "C": "Fluorine",
+    "D": "Chlorine"
+  },
+  "correct_answer": "C",
+  "solution": "Fluorine has highest electronegativity (3.98)."
+},
+  {
+  "id": 306,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which of the following has highest ionisation enthalpy?",
+  "options": {
+    "A": "Li",
+    "B": "Be",
+    "C": "B",
+    "D": "C"
+  },
+  "correct_answer": "D",
+  "solution": "Ionisation enthalpy increases across period → Carbon highest among given."
+},
+{
+  "id": 307,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has lowest electron affinity?",
+  "options": {
+    "A": "Cl",
+    "B": "F",
+    "C": "Ne",
+    "D": "O"
+  },
+  "correct_answer": "C",
+  "solution": "Noble gases have very low (positive) electron affinity."
+},
+{
+  "id": 308,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which property decreases down the group?",
+  "options": {
+    "A": "Atomic radius",
+    "B": "Metallic character",
+    "C": "Ionisation energy",
+    "D": "Shielding effect"
+  },
+  "correct_answer": "C",
+  "solution": "Ionisation energy decreases down group due to increased distance and shielding."
+},
+{
+  "id": 309,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has maximum metallic character?",
+  "options": {
+    "A": "Na",
+    "B": "K",
+    "C": "Rb",
+    "D": "Cs"
+  },
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group → Cs highest."
+},
+{
+  "id": 310,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {
+    "A": "Na2O",
+    "B": "Al2O3",
+    "C": "CO2",
+    "D": "SO2"
+  },
+  "correct_answer": "B",
+  "solution": "Al2O3 reacts with both acids and bases → amphoteric."
+},
+{
+  "id": 311,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has smallest atomic radius?",
+  "options": {
+    "A": "Li",
+    "B": "Be",
+    "C": "B",
+    "D": "C"
+  },
+  "correct_answer": "D",
+  "solution": "Atomic radius decreases across period → Carbon smallest."
+},
+{
+  "id": 312,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element shows highest electron gain enthalpy?",
+  "options": {
+    "A": "F",
+    "B": "Cl",
+    "C": "Br",
+    "D": "I"
+  },
+  "correct_answer": "B",
+  "solution": "Cl has highest electron gain enthalpy due to optimal size."
+},
+{
+  "id": 313,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element is most electropositive?",
+  "options": {
+    "A": "Li",
+    "B": "Na",
+    "C": "K",
+    "D": "Cs"
+  },
+  "correct_answer": "D",
+  "solution": "Electropositivity increases down group → Cs highest."
+},
+{
+  "id": 314,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity?",
+  "options": {
+    "A": "Cl",
+    "B": "Br",
+    "C": "I",
+    "D": "At"
+  },
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group → Cl highest."
+},
+{
+  "id": 315,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which of the following has highest atomic radius?",
+  "options": {
+    "A": "F",
+    "B": "Cl",
+    "C": "Br",
+    "D": "I"
+  },
+  "correct_answer": "D",
+  "solution": "Atomic radius increases down group → I highest."
+},
+  
+{
+  "id": 316,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has the highest first ionisation enthalpy in period 2?",
+  "options": {
+    "A": "N",
+    "B": "O",
+    "C": "F",
+    "D": "Ne"
+  },
+  "correct_answer": "D",
+  "solution": "Noble gas Neon has completely filled shell → highest ionisation enthalpy."
+},
+{
+  "id": 317,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which of the following has lowest atomic radius?",
+  "options": {
+    "A": "Na",
+    "B": "Mg",
+    "C": "Al",
+    "D": "Si"
+  },
+  "correct_answer": "D",
+  "solution": "Atomic radius decreases across period → Si smallest."
+},
+{
+  "id": 318,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has maximum electron affinity?",
+  "options": {
+    "A": "F",
+    "B": "Cl",
+    "C": "Br",
+    "D": "I"
+  },
+  "correct_answer": "B",
+  "solution": "Chlorine has highest electron affinity due to optimal size."
+},
+{
+  "id": 319,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which of the following shows highest metallic character?",
+  "options": {
+    "A": "Li",
+    "B": "Na",
+    "C": "K",
+    "D": "Rb"
+  },
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group → Rb highest among given."
+},
+{
+  "id": 320,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {
+    "A": "Na2O",
+    "B": "CaO",
+    "C": "SO3",
+    "D": "MgO"
+  },
+  "correct_answer": "C",
+  "solution": "Non-metal oxides like SO3 are acidic."
+},
+{
+  "id": 321,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy?",
+  "options": {
+    "A": "Na",
+    "B": "Mg",
+    "C": "Al",
+    "D": "Si"
+  },
+  "correct_answer": "D",
+  "solution": "Ionisation energy increases across period → Si highest."
+},
+{
+  "id": 322,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which of the following is most electronegative?",
+  "options": {
+    "A": "N",
+    "B": "O",
+    "C": "F",
+    "D": "Cl"
+  },
+  "correct_answer": "C",
+  "solution": "Fluorine has highest electronegativity."
+},
+{
+  "id": 323,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation enthalpy?",
+  "options": {
+    "A": "Li",
+    "B": "Na",
+    "C": "K",
+    "D": "Rb"
+  },
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group → Rb lowest."
+},
+{
+  "id": 324,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has largest atomic size?",
+  "options": {
+    "A": "N",
+    "B": "P",
+    "C": "As",
+    "D": "Sb"
+  },
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group → Sb largest."
+},
+{
+  "id": 325,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest electron gain enthalpy in group 17?",
+  "options": {
+    "A": "F",
+    "B": "Cl",
+    "C": "Br",
+    "D": "I"
+  },
+  "correct_answer": "B",
+  "solution": "Chlorine has highest electron gain enthalpy."
+},
+  {
+  "id": 326,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest atomic radius in group 1?",
+  "options": {
+    "A": "Li",
+    "B": "Na",
+    "C": "K",
+    "D": "Cs"
+  },
+  "correct_answer": "D",
+  "solution": "Atomic radius increases down the group → Cs is largest."
+},
+{
+  "id": 327,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which of the following has lowest electronegativity?",
+  "options": {
+    "A": "F",
+    "B": "Cl",
+    "C": "Br",
+    "D": "I"
+  },
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group → I lowest."
+},
+{
+  "id": 328,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest ionisation enthalpy in group 17?",
+  "options": {
+    "A": "F",
+    "B": "Cl",
+    "C": "Br",
+    "D": "I"
+  },
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group → F highest."
+},
+{
+  "id": 329,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is basic?",
+  "options": {
+    "A": "CO2",
+    "B": "SO2",
+    "C": "Na2O",
+    "D": "NO2"
+  },
+  "correct_answer": "C",
+  "solution": "Metal oxides like Na2O are basic."
+},
+{
+  "id": 330,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has smallest atomic size in period 3?",
+  "options": {
+    "A": "Na",
+    "B": "Mg",
+    "C": "Al",
+    "D": "Cl"
+  },
+  "correct_answer": "D",
+  "solution": "Atomic size decreases across period → Cl smallest."
+},
+{
+  "id": 331,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which of the following has highest metallic character?",
+  "options": {
+    "A": "Be",
+    "B": "Mg",
+    "C": "Ca",
+    "D": "Sr"
+  },
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group → Sr highest."
+},
+{
+  "id": 332,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest electron affinity in period 3?",
+  "options": {
+    "A": "S",
+    "B": "Cl",
+    "C": "P",
+    "D": "Ar"
+  },
+  "correct_answer": "B",
+  "solution": "Chlorine has highest electron affinity in period 3."
+},
+{
+  "id": 333,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation enthalpy?",
+  "options": {
+    "A": "P",
+    "B": "S",
+    "C": "Cl",
+    "D": "Ar"
+  },
+  "correct_answer": "D",
+  "solution": "Noble gas Argon has highest ionisation energy."
+},
+{
+  "id": 334,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element is most electropositive in period 3?",
+  "options": {
+    "A": "Na",
+    "B": "Mg",
+    "C": "Al",
+    "D": "Si"
+  },
+  "correct_answer": "A",
+  "solution": "Electropositivity decreases across period → Na highest."
+},
+{
+  "id": 335,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has largest atomic radius?",
+  "options": {
+    "A": "Cl",
+    "B": "Br",
+    "C": "I",
+    "D": "At"
+  },
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group → At largest."
 }
-]  
+,
+  {
+  "id": 336,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has lowest ionisation enthalpy in group 1?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Cs"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group → Cs lowest."
+},
+{
+  "id": 337,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest electronegativity in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Cl","D":"Si"},
+  "correct_answer": "C",
+  "solution": "Electronegativity increases across period → Cl highest."
+},
+{
+  "id": 338,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity?",
+  "options": {"A":"F","B":"Cl","C":"O","D":"S"},
+  "correct_answer": "B",
+  "solution": "Cl has highest electron affinity due to less repulsion than F."
+},
+{
+  "id": 339,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is neutral?",
+  "options": {"A":"CO","B":"SO2","C":"Na2O","D":"Al2O3"},
+  "correct_answer": "A",
+  "solution": "CO is a neutral oxide."
+},
+{
+  "id": 340,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"C"},
+  "correct_answer": "A",
+  "solution": "Atomic radius decreases across period → Li largest."
+},
+{
+  "id": 341,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Si"},
+  "correct_answer": "A",
+  "solution": "Electronegativity increases across period → Na lowest."
+},
+{
+  "id": 342,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest ionisation energy?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"Kr"},
+  "correct_answer": "A",
+  "solution": "Helium has highest ionisation energy due to smallest size."
+},
+{
+  "id": 343,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character?",
+  "options": {"A":"Na","B":"K","C":"Rb","D":"Cs"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group → Cs highest."
+},
+{
+  "id": 344,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has smallest ionic radius?",
+  "options": {"A":"Na+","B":"Mg2+","C":"Al3+","D":"F-"},
+  "correct_answer": "C",
+  "solution": "Higher charge → smaller radius → Al3+ smallest."
+},
+{
+  "id": 345,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron gain enthalpy?",
+  "options": {"A":"Cl","B":"Br","C":"I","D":"At"},
+  "correct_answer": "A",
+  "solution": "Cl has highest electron gain enthalpy."
+},
+{
+  "id": 346,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius?",
+  "options": {"A":"Na","B":"K","C":"Rb","D":"Cs"},
+  "correct_answer": "D",
+  "solution": "Atomic radius increases down group."
+},
+{
+  "id": 347,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"ZnO","B":"CO2","C":"Na2O","D":"SO3"},
+  "correct_answer": "A",
+  "solution": "ZnO reacts with both acids and bases."
+},
+{
+  "id": 348,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation enthalpy?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 349,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius?",
+  "options": {"A":"N","B":"O","C":"F","D":"Ne"},
+  "correct_answer": "D",
+  "solution": "Atomic size decreases across period → Ne smallest."
+},
+{
+  "id": 350,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity?",
+  "options": {"A":"O","B":"N","C":"F","D":"Cl"},
+  "correct_answer": "C",
+  "solution": "Fluorine is most electronegative."
+},
+{
+  "id": 351,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 352,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electron affinity?",
+  "options": {"A":"Cl","B":"F","C":"Ne","D":"O"},
+  "correct_answer": "C",
+  "solution": "Noble gases have lowest electron affinity."
+},
+{
+  "id": 353,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "D",
+  "solution": "Atomic radius increases down group."
+},
+{
+  "id": 354,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {"A":"CO2","B":"Na2O","C":"CaO","D":"MgO"},
+  "correct_answer": "A",
+  "solution": "CO2 is an acidic oxide."
+},
+{
+  "id": 355,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation enthalpy?",
+  "options": {"A":"N","B":"O","C":"F","D":"Ne"},
+  "correct_answer": "D",
+  "solution": "Neon has highest IE."
+},
+{
+  "id": 356,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has smallest atomic size?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Cl"},
+  "correct_answer": "D",
+  "solution": "Atomic size decreases across period."
+},
+{
+  "id": 357,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity?",
+  "options": {"A":"Cl","B":"Br","C":"I","D":"At"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 358,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "B",
+  "solution": "Cl has highest electron affinity."
+},
+{
+  "id": 359,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Sr"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 360,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation enthalpy?",
+  "options": {"A":"Na","B":"K","C":"Rb","D":"Cs"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 361,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 362,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity?",
+  "options": {"A":"N","B":"O","C":"F","D":"Cl"},
+  "correct_answer": "C",
+  "solution": "Fluorine highest."
+},
+{
+  "id": 363,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"Al2O3","B":"CO2","C":"Na2O","D":"SO2"},
+  "correct_answer": "A",
+  "solution": "Al2O3 is amphoteric."
+},
+{
+  "id": 364,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic size?",
+  "options": {"A":"C","B":"N","C":"O","D":"F"},
+  "correct_answer": "D",
+  "solution": "Atomic size decreases across period."
+},
+{
+  "id": 365,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"Kr"},
+  "correct_answer": "A",
+  "solution": "Helium highest IE."
+},
+  {
+  "id": 366,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has lowest electronegativity in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Sr"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group → Sr lowest."
+},
+{
+  "id": 367,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation enthalpy in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Sr"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group → Be highest."
+},
+{
+  "id": 368,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is basic?",
+  "options": {"A":"CO2","B":"SO3","C":"CaO","D":"NO2"},
+  "correct_answer": "C",
+  "solution": "Metal oxides like CaO are basic."
+},
+{
+  "id": 369,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest atomic radius in period 4?",
+  "options": {"A":"K","B":"Ca","C":"Sc","D":"Ti"},
+  "correct_answer": "A",
+  "solution": "Atomic radius decreases across period → K largest."
+},
+{
+  "id": 370,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "B",
+  "solution": "Sulfur has higher electron affinity than oxygen due to less repulsion."
+},
+{
+  "id": 371,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Si"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy increases across period → Na lowest."
+},
+{
+  "id": 372,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group → N highest."
+},
+{
+  "id": 373,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has smallest atomic size in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group → C smallest."
+},
+{
+  "id": 374,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"Tl"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group → Tl highest."
+},
+{
+  "id": 375,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation enthalpy in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group → B highest."
+},
+{
+  "id": 376,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group → F smallest."
+},
+{
+  "id": 377,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "B",
+  "solution": "P has higher electron affinity than N due to stability of half-filled orbitals."
+},
+{
+  "id": 378,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"Al2O3","B":"SO3","C":"CO2","D":"Na2O"},
+  "correct_answer": "A",
+  "solution": "Al2O3 is amphoteric."
+},
+{
+  "id": 379,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group → O highest."
+},
+{
+  "id": 380,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has largest atomic size in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group → Sb largest."
+},
+{
+  "id": 381,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 382,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 383,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "A",
+  "solution": "Electron affinity decreases down group."
+},
+{
+  "id": 384,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 385,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 386,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 387,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {"A":"CO2","B":"Na2O","C":"CaO","D":"MgO"},
+  "correct_answer": "A",
+  "solution": "CO2 is acidic oxide."
+},
+{
+  "id": 388,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation enthalpy in group 1?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 389,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 390,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 391,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "B",
+  "solution": "Cl has highest electron affinity."
+},
+{
+  "id": 392,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 1?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 393,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic size in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"F"},
+  "correct_answer": "D",
+  "solution": "Atomic size decreases across period."
+},
+{
+  "id": 394,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 18?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"Kr"},
+  "correct_answer": "A",
+  "solution": "Helium has highest ionisation energy."
+},
+{
+  "id": 395,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"ZnO","B":"CO2","C":"Na2O","D":"SO2"},
+  "correct_answer": "A",
+  "solution": "ZnO is amphoteric oxide."
+},
+  {
+  "id": 396,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest electronegativity in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Sr"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group → Be highest."
+},
+{
+  "id": 397,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 398,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 399,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is basic?",
+  "options": {"A":"Na2O","B":"CO2","C":"SO2","D":"NO2"},
+  "correct_answer": "A",
+  "solution": "Metal oxides are basic."
+},
+{
+  "id": 400,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in period 2?",
+  "options": {"A":"F","B":"O","C":"N","D":"C"},
+  "correct_answer": "A",
+  "solution": "Fluorine has highest electron affinity in period 2."
+},
+{
+  "id": 401,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"C"},
+  "correct_answer": "A",
+  "solution": "Electronegativity increases across period → Li lowest."
+},
+{
+  "id": 402,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Cl","D":"Ar"},
+  "correct_answer": "D",
+  "solution": "Argon (noble gas) has highest IE."
+},
+{
+  "id": 403,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has smallest atomic radius in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"F"},
+  "correct_answer": "D",
+  "solution": "Atomic size decreases across period."
+},
+{
+  "id": 404,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"C"},
+  "correct_answer": "A",
+  "solution": "Metallic character decreases across period."
+},
+{
+  "id": 405,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {"A":"CO2","B":"Na2O","C":"MgO","D":"CaO"},
+  "correct_answer": "A",
+  "solution": "Non-metal oxides are acidic."
+},
+{
+  "id": 406,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 407,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 408,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 409,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 410,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "B",
+  "solution": "Sulfur has higher EA than oxygen."
+},
+{
+  "id": 411,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"Al2O3","B":"SO2","C":"CO2","D":"Na2O"},
+  "correct_answer": "A",
+  "solution": "Al2O3 is amphoteric."
+},
+{
+  "id": 412,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 413,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 414,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"Tl"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 415,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 416,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 417,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {"A":"SO3","B":"Na2O","C":"CaO","D":"MgO"},
+  "correct_answer": "A",
+  "solution": "SO3 is acidic oxide."
+},
+{
+  "id": 418,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 419,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 420,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "A",
+  "solution": "Electron affinity decreases down group."
+},
+{
+  "id": 421,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 422,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 423,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 424,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is basic?",
+  "options": {"A":"CaO","B":"CO2","C":"SO3","D":"NO2"},
+  "correct_answer": "A",
+  "solution": "CaO is basic oxide."
+},
+{
+  "id": 425,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+  {
+  "id": 426,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest electronegativity in group 1?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group → Li highest."
+},
+{
+  "id": 427,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Sr"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group → Be smallest."
+},
+{
+  "id": 428,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group → B highest."
+},
+{
+  "id": 429,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"Al2O3","B":"Na2O","C":"CO2","D":"SO3"},
+  "correct_answer": "A",
+  "solution": "Al2O3 is amphoteric."
+},
+{
+  "id": 430,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "B",
+  "solution": "Cl has highest electron affinity."
+},
+{
+  "id": 431,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"C"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy increases across period → Li lowest."
+},
+{
+  "id": 432,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 433,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Si"},
+  "correct_answer": "A",
+  "solution": "Metallic character decreases across period."
+},
+{
+  "id": 434,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {"A":"SO2","B":"Na2O","C":"CaO","D":"MgO"},
+  "correct_answer": "A",
+  "solution": "SO2 is acidic oxide."
+},
+{
+  "id": 435,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Sr"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 436,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 437,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"C"},
+  "correct_answer": "A",
+  "solution": "Atomic size decreases across period."
+},
+{
+  "id": 438,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "B",
+  "solution": "P has higher electron affinity than N."
+},
+{
+  "id": 439,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is basic?",
+  "options": {"A":"Na2O","B":"CO2","C":"SO3","D":"NO2"},
+  "correct_answer": "A",
+  "solution": "Na2O is basic oxide."
+},
+{
+  "id": 440,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 441,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 442,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 443,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity in period 2?",
+  "options": {"A":"N","B":"O","C":"F","D":"Ne"},
+  "correct_answer": "C",
+  "solution": "Fluorine highest electronegativity."
+},
+{
+  "id": 444,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 445,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"ZnO","B":"CO2","C":"Na2O","D":"SO2"},
+  "correct_answer": "A",
+  "solution": "ZnO is amphoteric."
+},
+{
+  "id": 446,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 1?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 447,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in period 3?",
+  "options": {"A":"S","B":"Cl","C":"P","D":"Ar"},
+  "correct_answer": "B",
+  "solution": "Cl highest electron affinity."
+},
+{
+  "id": 448,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 449,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 450,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 451,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {"A":"SO3","B":"Na2O","C":"CaO","D":"MgO"},
+  "correct_answer": "A",
+  "solution": "SO3 is acidic oxide."
+},
+{
+  "id": 452,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 453,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 454,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 455,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+  {
+  "id": 456,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest electronegativity in group 18?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"None"},
+  "correct_answer": "D",
+  "solution": "Noble gases generally do not have defined electronegativity."
+},
+{
+  "id": 457,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electron affinity in group 18?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"All"},
+  "correct_answer": "D",
+  "solution": "All noble gases have very low (positive) electron affinity."
+},
+{
+  "id": 458,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which element has highest ionisation energy in group 18?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"Kr"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group → He highest."
+},
+{
+  "id": 459,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 18?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"Kr"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 460,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 18?",
+  "options": {"A":"He","B":"Ne","C":"Ar","D":"Kr"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 461,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 1?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "A",
+  "solution": "Electron affinity decreases down group."
+},
+{
+  "id": 462,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Cl"},
+  "correct_answer": "D",
+  "solution": "Atomic size decreases across period."
+},
+{
+  "id": 463,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 17?",
+  "options": {"A":"F","B":"Cl","C":"Br","D":"I"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 464,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is neutral?",
+  "options": {"A":"CO","B":"CO2","C":"SO2","D":"NO2"},
+  "correct_answer": "A",
+  "solution": "CO is neutral oxide."
+},
+{
+  "id": 465,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in period 2?",
+  "options": {"A":"F","B":"O","C":"N","D":"Ne"},
+  "correct_answer": "D",
+  "solution": "Neon has highest ionisation energy."
+},
+{
+  "id": 466,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Si"},
+  "correct_answer": "A",
+  "solution": "Electronegativity increases across period."
+},
+{
+  "id": 467,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Si"},
+  "correct_answer": "A",
+  "solution": "Atomic size decreases across period."
+},
+{
+  "id": 468,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"Al2O3","B":"Na2O","C":"SO3","D":"CO2"},
+  "correct_answer": "A",
+  "solution": "Al2O3 is amphoteric."
+},
+{
+  "id": 469,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in period 2?",
+  "options": {"A":"F","B":"O","C":"N","D":"C"},
+  "correct_answer": "A",
+  "solution": "Fluorine has highest electron affinity."
+},
+{
+  "id": 470,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "D",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 471,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "D",
+  "solution": "Metallic character increases down group."
+},
+{
+  "id": 472,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest atomic radius in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "A",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 473,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electronegativity in group 15?",
+  "options": {"A":"N","B":"P","C":"As","D":"Sb"},
+  "correct_answer": "A",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 474,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is acidic?",
+  "options": {"A":"CO2","B":"Na2O","C":"CaO","D":"MgO"},
+  "correct_answer": "A",
+  "solution": "CO2 is acidic oxide."
+},
+{
+  "id": 475,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 1?",
+  "options": {"A":"Li","B":"Na","C":"K","D":"Rb"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 476,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 2?",
+  "options": {"A":"Be","B":"Mg","C":"Ca","D":"Ba"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 477,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "D",
+  "solution": "Electronegativity decreases down group."
+},
+{
+  "id": 478,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is basic?",
+  "options": {"A":"CaO","B":"CO2","C":"SO3","D":"NO2"},
+  "correct_answer": "A",
+  "solution": "CaO is basic oxide."
+},
+{
+  "id": 479,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest electron affinity in group 14?",
+  "options": {"A":"C","B":"Si","C":"Ge","D":"Sn"},
+  "correct_answer": "A",
+  "solution": "Electron affinity decreases down group."
+},
+{
+  "id": 480,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest ionisation energy in period 3?",
+  "options": {"A":"Na","B":"Mg","C":"Al","D":"Si"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy increases across period."
+},
+{
+  "id": 481,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest metallic character in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"C"},
+  "correct_answer": "A",
+  "solution": "Metallic character decreases across period."
+},
+{
+  "id": 482,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest atomic radius in group 13?",
+  "options": {"A":"B","B":"Al","C":"Ga","D":"In"},
+  "correct_answer": "D",
+  "solution": "Atomic size increases down group."
+},
+{
+  "id": 483,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has lowest electronegativity in period 2?",
+  "options": {"A":"Li","B":"Be","C":"B","D":"C"},
+  "correct_answer": "A",
+  "solution": "Electronegativity increases across period."
+},
+{
+  "id": 484,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which has highest ionisation energy in group 16?",
+  "options": {"A":"O","B":"S","C":"Se","D":"Te"},
+  "correct_answer": "A",
+  "solution": "Ionisation energy decreases down group."
+},
+{
+  "id": 485,
+  "subject": "chemistry",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "question": "Which oxide is amphoteric?",
+  "options": {"A":"ZnO","B":"CO2","C":"Na2O","D":"SO2"},
+  "correct_answer": "A",
+  "solution": "ZnO is amphoteric oxide."
+}
+]
