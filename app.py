@@ -1,78 +1,14 @@
 import streamlit as st
 import json
 import difflib
-import numpy as np
-from sentence_transformers import SentenceTransformer, util
-import easyocr
 from PIL import Image
-import traceback
+import numpy as np
+import easyocr
 
 st.set_page_config(layout="wide")
 
 # ------------------------------
-# 🎨 Theme changer
-# ------------------------------
-
-themes = [
-"linear-gradient(-45deg,#0f172a,#1e1b4b,#312e81,#0f766e)",
-"linear-gradient(-45deg,#020617,#6d28d9,#ec4899,#0ea5e9)",
-"linear-gradient(-45deg,#022c22,#0f766e,#06b6d4,#1e3a8a)",
-"linear-gradient(-45deg,#0f172a,#1e40af,#7c3aed,#0ea5e9)",
-"linear-gradient(-45deg,#022c22,#065f46,#1e293b,#0f172a)"
-]
-
-if "theme_index" not in st.session_state:
-    st.session_state.theme_index = 0
-
-def next_theme():
-    st.session_state.theme_index = (st.session_state.theme_index + 1) % len(themes)
-
-bg = themes[st.session_state.theme_index]
-
-st.markdown(f"""
-<style>
-.stApp {{
-background:{bg};
-background-size:400% 400%;
-animation:gradient 15s ease infinite;
-}}
-@keyframes gradient {{
-0% {{background-position:0% 50%;}}
-50% {{background-position:100% 50%;}}
-100% {{background-position:0% 50%;}}
-}}
-.hero {{
-text-align:center;
-font-size:48px;
-font-weight:700;
-color:white;
-padding:20px;
-}}
-.card {{
-background:rgba(255,255,255,0.07);
-padding:20px;
-border-radius:16px;
-margin-bottom:20px;
-backdrop-filter:blur(10px);
-box-shadow:0 8px 25px rgba(0,0,0,0.4);
-}}
-</style>
-""", unsafe_allow_html=True)
-
-# ------------------------------
-# Header
-# ------------------------------
-
-col1,col2 = st.columns([9,1])
-
-with col1:
-    st.markdown("<div class='hero'>🚀 AI Doubt Solver</div>", unsafe_allow_html=True)
-
-with col2:
-    st.button("🎨", on_click=next_theme)
-
-# ------------------------------
-# Load dataset (cached)
+# Load Data
 # ------------------------------
 
 @st.cache_data
@@ -81,28 +17,22 @@ def load_data():
         return json.load(f)
 
 dataset = load_data()
-
 questions = [d.get("question","") for d in dataset]
 
 # ------------------------------
-# Load AI model (cached)
+# LIGHT SEARCH (no AI model)
 # ------------------------------
 
-@st.cache_resource
-def load_model():
-    return SentenceTransformer("all-MiniLM-L6-v2")
+def search(query):
+    scores = [
+        difflib.SequenceMatcher(None, query.lower(), q.lower()).ratio()
+        for q in questions
+    ]
+    top = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:3]
+    return [dataset[i] for i in top]
 
 # ------------------------------
-# Load embeddings (cached)
-# ------------------------------
-
-@st.cache_data
-def get_embeddings(questions):
-    model = load_model()
-    return model.encode(questions, convert_to_tensor=True)
-
-# ------------------------------
-# OCR (cached)
+# OCR (optional safe load)
 # ------------------------------
 
 @st.cache_resource
@@ -110,40 +40,44 @@ def load_ocr():
     return easyocr.Reader(['en'], gpu=False)
 
 # ------------------------------
-# Matching functions
+# UI
 # ------------------------------
 
-def exact_match(query):
-    scores = [
-        difflib.SequenceMatcher(None, query.lower(), q.lower()).ratio()
-        for q in questions
-    ]
-    best = max(scores)
+st.title("🚀 AI Doubt Solver")
 
-    if best > 0.75:
-        return dataset[scores.index(best)]
-
-    return None
-
-
-def semantic_search(query):
-    model = load_model()
-    embeddings = get_embeddings(questions)
-
-    query_embedding = model.encode(query, convert_to_tensor=True)
-
-    scores = util.cos_sim(query_embedding, embeddings)[0]
-    top = scores.argsort(descending=True)[:3]
-
-    return [dataset[int(i)] for i in top]
+query = st.text_input("Ask your doubt")
+img = st.file_uploader("Upload question image")
 
 # ------------------------------
-# Display function
+# TEXT SEARCH
 # ------------------------------
 
-def show_question(q):
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
+if query:
+    results = search(query)
+    for q in results:
+        st.subheader(q["question"])
+        for k,v in q.get("options",{}).items():
+            st.write(f"{k}) {v}")
+        st.success(f"Answer: {q.get('correct_answer','')}")
+        st.write(q.get("solution",""))
+        st.divider()
 
+# ------------------------------
+# IMAGE SEARCH
+# ------------------------------
+
+if img:
+    reader = load_ocr()
+    image = Image.open(img)
+    st.image(image)
+
+    text = " ".join(reader.readtext(np.array(image), detail=0))
+    st.info(text)
+
+    results = search(text)
+    for q in results:
+        st.subheader(q["question"])
+        st.write(q.get("solution",""))
     st.subheader("Question")
     st.write(q.get("question",""))
 
